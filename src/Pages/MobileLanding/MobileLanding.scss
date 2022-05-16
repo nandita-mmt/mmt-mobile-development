@@ -2,7 +2,8 @@
 @import '~bootstrap/scss/bootstrap';
 .default-page-template {
   .content-wrapper{
-    margin-top: 109px;
+    // margin-top: 60px;
+    position: relative;
   }
     
 }
@@ -94,11 +95,43 @@ $secondary_color:#404041;
   margin-right: auto;
 }
 .header-container{
-  box-shadow: 0px 15px 20px #f5f5f5;
+  box-shadow: 0px 8px 12px #f5f5f57d;
   padding: 5px 0px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  z-index: 10000;
+  background-color: #fff;
+  transition: 0.5s ease;
+}
+.fixed-sidebtn-container{
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 100;
+  background-color: transparent;
+  height: 100vh;
+  width: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .fixed-sidebtn{
+    margin: auto 0;
+    display: inline-block;
+    transform: rotate(-90deg);
+    a{
+      border-radius: 12px 12px 0 0 !important;
+      width: 240px;
+    }
+    
+    height: 50px;    
+ }
+  
 }
 section{
-  padding:80px 0px;
+  padding:60px 0px;
 }
 .heading{
   margin-bottom: 35px;
@@ -122,10 +155,12 @@ section{
   }
 }
 .banner{
+  background: url("../../Assets/Images/Banner/dotted-bg.png") no-repeat  45% 20%, url("../../Assets/Images/Banner/dotted-bg-2.png") no-repeat 2% 90% ;
+  // background-position: 45% 20%;
   padding-bottom: 0px;
   h1{
     color: $primary_color;
-    font-size: 90px;
+    font-size: 80px;
     font-weight: 600;
 
     @media only screen and(max-width: 1366px){
@@ -133,7 +168,7 @@ section{
     }
   }
   h2{
-      font-size: 40px;
+      font-size: 30px;
       color: $secondary_color;
       font-weight: 700;
       @media only screen and(max-width: 1366px){
@@ -142,6 +177,7 @@ section{
     }
     p{
       margin-top: 20px;
+      font-weight: 500;
     }
     h4{
       color: #662d91;
@@ -150,6 +186,31 @@ section{
     }
     a{
       margin-top: 30px;
+    }
+    .ddd{
+      padding: 2rem;
+      // border-radius: 12px;
+      background-color: #f4f7f7;
+      input, textarea, input[type="tel"]{
+        height: 50px;
+        border-radius: 20px;
+        border:1px solid $primary_color;
+        background-color: transparent;             
+        &:active{
+          background-color: none;         
+        }
+      }
+      textarea{
+        height: 100px !important;
+        resize:none;
+      }
+      input[type="submit"]{
+        margin-top: 15px;
+        @include btn_style($padding:10px 30px, $bgColor:$primary_color, $fontSize: 17px);
+        &:hover{
+          background-color: $secondary_color;
+        }
+      }
     }
 }
 .spiner{
@@ -165,8 +226,8 @@ section{
 .engagement{
   .section{
     background: url(../../Assets/Images/MobileLanding/round.png) no-repeat center;
-    background-size: cover;
-    padding:80px 0px;
+    background-size: contain;
+    padding:120px 0px;
     .icon{
       display: flex;
       align-items:center;
@@ -189,6 +250,7 @@ section{
     p{
       font-size: 14px;
       padding:0px 70px;
+      font-weight: 500;
     }
   }
   .col-lg-4:nth-child(2){
@@ -321,6 +383,9 @@ section{
   background: $secondary_color url(../../Assets/Images/MobileLanding/graphic02.png) no-repeat 100% 40%;
     background-size: 10% auto;
   padding-bottom: 10px;
+  min-height: 620px;
+ height: max-content;
+  transition: 0.3s;
   ul.nav{
     margin-bottom: 40px;
       a{
@@ -355,6 +420,7 @@ section{
       margin:0px 25px 50px;
       img{
         width: 50px;
+        min-height: 50px;
       }
     }
     h4{
@@ -550,7 +616,8 @@ section{
             
             border:0px;
             button{
-                padding: 0px;
+                padding: 0px;   
+                text-align: left;             
                 // transform:scale(1.1);
                 color: $secondary_color;
                 transition:0.5s;
@@ -615,6 +682,7 @@ section{
             button{
               background-color: transparent;
               border:0px;
+              text-align: left;
             }
             .collapsed{
                 color: #000000;
@@ -845,12 +913,22 @@ form .form-group{margin-bottom: 20px;}
   }
 
 }
+@media only screen and (max-width:1399px){
+  .engagement .section{
+    padding: 90px 0;
+  }
+}
 @media only screen and (max-width:1366px){
   .global-presentation .section h3{
     margin-top: 0px;
   }
-
 }
+@media only screen and (max-width:1156px){
+  .engagement .section {
+    padding: 60px 0;
+}
+}
+
 @media only screen and (max-width:1080px){
 
 }
@@ -860,6 +938,8 @@ form .form-group{margin-bottom: 20px;}
   .information-form .ddd{background-color: $secondary_color; padding-top: 30px; padding-bottom: 30px; margin-bottom: 30px;}
   .information-form{padding-top: 0px;}
   .form-right ul{padding-left: 0px;}
+  .benefits{padding-bottom: 90px;}
+  .benefits .heading{margin-bottom: 0;}
 }
 @media only screen and (max-width:767px){
   .technology ul.nav a{margin-bottom: 10px; margin-right: 10px;}
@@ -924,6 +1004,7 @@ form .form-group{margin-bottom: 20px;}
 .shresta, .setting-needs{flex-direction: column-reverse;}
 .technology ul.nav{justify-content: center !important;}
 .faqs .accordion .card-header button font{font-size: 16px; font-weight: 600; padding-right: 35px;}
+.technology .logos li{margin: 0px 25px 10px;}
 }
 @media only screen and (max-width:480px){
  .talk-to-expart{
