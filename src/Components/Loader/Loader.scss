@@ -1,0 +1,222 @@
+.Loader {
+	// background-image: url(../../Assets/Images/Loader/loader-back.svg);
+	background-image: linear-gradient(to right, #111328, #01426e, #19b8a8);
+	width: 100vw;
+	height: 100vh;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	.mmt-loader-container {
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		.mmt-loader-image {
+			position: relative;
+			flex-direction: column;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 80%;
+			height: 100%;
+			overflow: hidden;
+			.mmt-logo {
+				width: 175px;
+				height: 214px;
+				position: relative;
+			}
+			.mmt-loader-txt-one {
+				color: #d6d6d6;
+			}
+			.mmt-loader-txt-two {
+				color: #d6d6d6;
+			}
+		}
+	}
+	svg {
+		text-align: center;
+		margin: 0 auto;
+		mask-image: url(../../Assets/Images/Loader/svg-carve.svg),
+			url(../../Assets/Images/Loader/svg-carve2.svg);
+		-webkit-mask-image: url(../../Assets/Images/Loader/svg-carve.svg),
+			url(../../Assets/Images/Loader/svg-carve2.svg);
+		mask-position: center;
+		-webkit-mask-position: 0px 160px, 0px 160px;
+		mask-size: 100%;
+		-webkit-mask-size: 100%, 150%;
+		mask-repeat: no-repeat;
+		-webkit-mask-repeat: no-repeat;
+		animation: fill 4s linear;
+		animation-fill-mode: forwards;
+	}
+}
+.mmt-loader-arrow {
+	top: 20%;
+	background-position: center;
+	background-repeat: no-repeat;
+	position: absolute;
+	right: 30%;
+}
+.mmt-loader-moon {
+	top: 50%;
+	background-position: center;
+	background-repeat: no-repeat;
+	position: absolute;
+	right: 18px;
+}
+.mmt-loader-left-moon {
+	top: 20%;
+	background-position: center;
+	background-repeat: no-repeat;
+	position: absolute;
+	opacity: 0.3;
+	left: 8%;
+}
+.mmt-loader-hash {
+	bottom: 4%;
+	background-position: center;
+	background-repeat: no-repeat;
+	position: absolute;
+	left: 10%;
+}
+
+.mmt-main-path {
+	width: 98%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: absolute;
+	opacity: 0.4;
+	-webkit-animation: rotate 7s linear infinite;
+	-webkit-animation-direction: normal;
+}
+.mmt-second-path {
+	width: 70%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: absolute;
+	opacity: 0.4;
+	-webkit-animation: rotate 7s linear infinite;
+	-webkit-animation-direction: reverse;
+}
+.mmt-third-path {
+	width: 55%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: absolute;
+	opacity: 40%;
+	-webkit-animation: rotate 7s linear infinite;
+	-webkit-animation-direction: normal;
+}
+.mmt-fourth-path {
+	width: 40%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: absolute;
+	opacity: 0.4;
+	-webkit-animation: rotate 7s linear infinite;
+	-webkit-animation-direction: reverse;
+}
+@keyframes rotate {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+// loader fill style starts here
+// .mmt-logo {
+// 	width: 175px;
+// 	height: 214px;
+// 	position: relative;
+// }
+.bg-logo {
+	position: absolute;
+	max-width: 100%;
+}
+
+@keyframes fill {
+	0% {
+		-webkit-mask-position: 0px 160px, 0px 160px;
+		mask-position: 0px 160px, 0px 160px;
+	}
+	100% {
+		-webkit-mask-position: 0px -69px, 0px -160px;
+		mask-position: 0px -69px, 0px -160px;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.Loader {
+		.mmt-loader-container {
+			.mmt-loader-image {
+				width: 100%;
+			}
+
+			.mmt-loader-left-moon {
+				top: 33%;
+			}
+			.mmt-loader-arrow {
+				top: 24%;
+				right: 31%;
+			}
+		}
+	}
+}
+@media only screen and (max-width: 992px) {
+	.Loader {
+		.mmt-loader-container {
+			.mmt-loader-image {
+				width: 100%;
+			}
+
+			.mmt-loader-left-moon {
+				top: 27%;
+			}
+			.mmt-loader-arrow {
+				top: 20%;
+			}
+		}
+	}
+}
+@media only screen and (max-width: 1024px) {
+	.Loader {
+		.mmt-loader-container {
+			.mmt-loader-image {
+				width: 100%;
+			}
+
+			.mmt-loader-left-moon {
+				top: 27%;
+			}
+			.mmt-loader-arrow {
+				top: 20%;
+			}
+		}
+	}
+}
+@media only screen and (max-width: 1900px) {
+	.Loader {
+		.mmt-loader-hash {
+			left: 21%;
+		}
+	}
+}
+@media only screen and (max-width: 1600px) {
+	.Loader {
+		.mmt-loader-hash {
+			left: 15%;
+		}
+	}
+}
+@media only screen and (max-width: 1400px) {
+	.Loader {
+		.mmt-loader-hash {
+			left: 10%;
+		}
+	}
+}

@@ -1,0 +1,187 @@
+.HealthCareCards {
+	width: 100%;
+	height: auto;
+	.mmt-custom-top {
+		margin-top: 0px;
+	}
+	.mmt-papercard-container {
+		.mmt-test-curve {
+			position: absolute;
+			margin: auto;
+			left: 0;
+			right: 0;
+		}
+		.mmt-card-holder {
+			display: grid;
+			grid-gap: 3.3rem;
+			grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
+		}
+	}
+	.owl-carousel {
+		.mmt-about-service-in {
+			border: 1px solid #c9c9d2;
+		}
+	}
+	.mmt-knowledge-row {
+		.mmt-know-txt-wd {
+			width: 75%;
+		}
+		.mmt-project-name-div {
+			display: flex;
+			.mmt-project-name-img {
+				width: 40%;
+				.img-text {
+					font-weight: 900;
+					font-family: 'Poppins', sans-serif;
+					margin: 0px;
+					font: bold 450px sans;
+					text-align: left !important;
+					background-size: 100% 100%;
+					background-clip: text;
+					-webkit-background-clip: text;
+					text-fill-color: transparent;
+					-webkit-text-fill-color: transparent;
+				}
+				.mmt-project-img {
+					width: 100%;
+					background-position: center;
+					background-repeat: no-repeat;
+					background-size: cover;
+				}
+			}
+		}
+	}
+	.mmt-know-menu {
+		width: 100%;
+		margin-top: 50px;
+		position: relative;
+		.mmt-subroute-dv {
+			width: 100%;
+			overflow: auto;
+			height: 100%;
+			display: flex;
+			justify-content: center;
+			flex-wrap: nowrap;
+			.mmt-know-project {
+				padding-bottom: 20px;
+				min-width: 120px;
+				align-items: center;
+				justify-content: center;
+				display: flex;
+				position: relative;
+				background: none !important;
+				color: #5b5b5b;
+				h3 {
+					font-size: 20px;
+				}
+			}
+		}
+		.mmt-subroute-dv::-webkit-scrollbar {
+			display: none;
+		}
+	}
+	.mmt-know-menu::-webkit-scrollbar {
+		display: none;
+	}
+	.mmt-know-btn {
+		span {
+			display: inline-block;
+			width: 100%;
+			margin-top: 10px;
+			img {
+				animation-fill-mode: forwards;
+				animation-timing-function: easy-in;
+				/*display: none;*/
+			}
+		}
+	}
+	.mmt-know-btn:hover {
+		span {
+			img {
+				animation: slide 0.8s alternate infinite;
+			}
+		}
+	}
+	.btn-light:focus {
+		box-shadow: none !important;
+	}
+	.nav-item {
+		min-width: 160px;
+		margin: 0px 25px;
+		.nav-link {
+			padding: 0px;
+		}
+	}
+	.nav-link {
+		&::after {
+			content: '';
+			position: absolute;
+			height: 1px;
+			width: 100%;
+			border-radius: 50px;
+			background: #bababa;
+			bottom: 4px;
+		}
+	}
+	.nav-pills .nav-link.active,
+	.nav-pills .show > .nav-link {
+		color: #000000;
+		position: relative;
+		&::before {
+			content: '';
+			position: absolute;
+			height: 8px;
+			width: 100%;
+			border-radius: 100px;
+			background: aqua;
+			bottom: 0px;
+			z-index: 1;
+		}
+	}
+	.item {
+		height: 70px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		img {
+			height: 40px;
+			width: auto;
+		}
+	}
+	.mmt-car-content {
+		height: 510px;
+		display: flex;
+		//align-items: center;
+		justify-content: flex-start;
+		flex-direction: column;
+	}
+	.extra-marg {
+		margin-top: 160px !important;
+	}
+	.product-service-header {
+		min-height: 125px;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.HealthCareCards {
+		.mmt-about-service-in {
+			border-right: none;
+		}
+		.mmt-know-menu {
+			.mmt-subroute-dv {
+				justify-content: flex-start;
+			}
+		}
+	}
+}
+@media only screen and (max-width: 576px) {
+	.HealthCareCards {
+		.mmt-custom-top {
+			margin-top: 30px;
+		}
+		.mmt-resp-font-xl {
+			font-size: 40px;
+		}
+	}
+}

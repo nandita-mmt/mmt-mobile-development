@@ -1,0 +1,26 @@
+.BlogDetailsCards {
+	width: 100%;
+	height: auto;
+	.mmt-blog-content-img {
+		width: 100%;
+		height: 100%;
+	}
+	.mmt-blog-img-dv {
+		// height: 450px;
+	}
+}
+
+@media only screen and (max-width: 992px) {
+	.BlogDetailsCards {
+		width: 100%;
+		height: auto;
+		.mmt-papercard-container {
+			.mmt-test-curve {
+				position: absolute;
+				margin: auto;
+				left: 0;
+				right: 0;
+			}
+		}
+	}
+}

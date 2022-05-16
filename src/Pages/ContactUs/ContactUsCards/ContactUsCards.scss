@@ -1,0 +1,25 @@
+.ContactUsCards {
+	width: 100%;
+	height: auto;
+	.mmt-papercard-container {
+		.mmt-test-curve {
+			position: absolute;
+			margin: auto;
+			left: 0;
+			right: 0;
+		}
+		.mmt-form-div {
+			box-shadow: 0px 5px 20px #0000001c;
+		}
+		.mmt-mail-text {
+			font-size: 22px;
+		}
+	}
+}
+@media only screen and (max-width: 500px) {
+	.ContactUsCards {
+		.mmt-mail-text {
+			font-size: 14px !important;
+		}
+	}
+}

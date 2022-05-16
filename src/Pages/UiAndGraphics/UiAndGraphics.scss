@@ -1,0 +1,442 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import '~bootstrap/scss/bootstrap';
+
+.default-page-template {
+    .cust-margin-0 {
+        margin: 0 !important;
+    }
+}
+
+
+/* 
+ * BANNER
+ */
+
+.default-banner {
+	width: 100%;
+	background-image: linear-gradient(to right, #111328, #01426e, #19b8a8);
+	opacity: 0.99;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 250px;
+	margin-top: 109px;
+	position: relative;
+	z-index: 0;
+	.mmt-white-blur {
+		background-image: url(../../Assets/Images/WebPractice/mobility_banner.png);
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+		z-index: 1;
+		width: 100%;
+		opacity: 0.8;
+		.mmt-white-cont {
+			z-index: 2;
+		}
+	}
+	// Animated Footer Btn Start Here
+	.button-animation {
+		text-align: center;
+		margin: 50px 0px;
+		button {
+			width: 150px;
+			height: 150px;
+			background-color: #482080;
+			border-radius: 50%;
+			margin: 0 auto;
+			border: 0px;
+			color: #ffffff;
+			font-size: 16px;
+			padding: 20px 0px 0px;
+			position: relative;
+			cursor: pointer;
+			svg {
+				position: absolute;
+				top: 2px;
+				left: 0px;
+				right: 0px;
+				margin: 0 auto;
+				path {
+					stroke-dasharray: 428;
+					stroke-dashoffset: 0;
+					fill: transparent;
+					stroke-width: 1px;
+					stroke: #ffffff;
+					animation: round 2.5s linear forwards;
+					display: none;
+				}
+			}
+			span {
+				display: inline-block;
+				width: 100%;
+				margin-top: 10px;
+				img {
+					animation-fill-mode: forwards;
+					animation-timing-function: easy-in;
+					/*display: none;*/
+				}
+			}
+		}
+		button:hover {
+			background-color: #19b8a8;
+			svg {
+				path {
+					display: block;
+				}
+			}
+			span {
+				img {
+					animation: bounce 0.8s alternate infinite;
+				}
+			}
+		}
+	}
+
+	@keyframes bounce {
+		0% {
+			transform: translateY(0px);
+		}
+		100% {
+			transform: translateY(-10px);
+		}
+	}
+	@keyframes round {
+		0% {
+			/*stroke-dasharray: 427;*/
+			stroke-dashoffset: 428;
+		}
+		100% {
+			/*stroke-dasharray: 0;*/
+			stroke-dashoffset: 0;
+		}
+	}
+	.mmt-web-resp-txt {
+		font-size: 60px;
+	}
+	// Animated Footer Button Ends Here
+}
+@media only screen and (max-width: 992px) {
+	.default-banner {
+		height: 120px;
+
+		.mmt-paper-heading {
+			top: 200px;
+		}
+		.mmt-white-blur {
+			background-image: none;
+		}
+	}
+}
+@media only screen and (max-width: 767px) {
+	.default-banner {
+		height: 120px;
+
+		.mmt-paper-heading {
+			top: 200px;
+			width: 100%;
+			right: 0px;
+		}
+	}
+}
+@media only screen and (max-width: 576px) {
+	.default-banner {
+		height: auto;
+		padding: 10px;
+
+		.mmt-web-resp-txt {
+			font-size: 45px;
+		}
+	}
+}
+
+
+/* 
+ * MAIN 
+ */
+
+.default-page-main {
+	width: 100%;
+	height: auto;
+	.mmt-papercard-container {
+		.mmt-test-curve {
+			position: absolute;
+			margin: auto;
+			left: 0;
+			right: 0;
+		}
+		.mmt-card-holder {
+			display: grid;
+			grid-gap: 3.3rem;
+			grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
+		}
+	}
+   .man{
+	margin-top: -71px;
+	margin-left: 200px;
+   }
+   .test{
+   width: 30%;
+   }
+	.mmt-car-content {
+		height: 510px;
+		display: flex;
+		justify-content: flex-start;
+		flex-direction: column;
+	}
+
+	.owl-carousel {
+		.mmt-about-service-in {
+			border: 1px solid #c9c9d2;
+		}
+	}
+	.mmt-co-founder {
+		margin-top: 100px;
+		.mmt-co-founder-img {
+			height: 520px;
+			width: 60%;
+			background-image: url(../../Assets/Images/AboutUs//about-main.webp);
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+		.mmt-co-founder-detail {
+			height: 500px;
+			width: 50%;
+			position: absolute;
+			background: #ffffff;
+			box-shadow: 0px 3px 20px #00000012;
+			right: 0px;
+			bottom: -50px;
+			padding: 50px;
+			display: flex;
+			justify-content: center;
+			flex-direction: column;
+			align-items: flex-start;
+			line-height: 33px;
+		}
+	}
+	.mmt-post {
+		margin-top: 100px;
+		.mmt-post-img {
+			height: 400px;
+			width: 80%;
+			background-image: url(../../Assets/Images/Teams/dummy-image.webp);
+			background-size: cover;
+			background-position: center;
+			background-repeat: no-repeat;
+		}
+		.mmt-post-detail {
+			height: 120px;
+			width: 50%;
+			position: absolute;
+			background: #ffffff;
+			box-shadow: 0px 3px 20px #00000012;
+			right: 0px;
+			bottom: -50px;
+			padding: 20px;
+			display: flex;
+			justify-content: center;
+			flex-direction: column;
+			align-items: flex-start;
+			line-height: 33px;
+		}
+	}
+	.mmt-web-resp-txt {
+		font-size: 60px;
+	}
+	.mmt-web-practice-key {
+		height: 450px;
+	}
+}
+@media only screen and (max-width: 767px) {
+	.default-page-main {
+		.mmt-about-service-in {
+			border-right: none;
+		}
+		.mmt-web-practice-key {
+			height: auto;
+		}
+	}
+}
+
+@media only screen and (max-width: 400px) {
+	.default-page-main {
+		.mmt-web-resp-txt {
+			font-size: 45px;
+		}
+	}
+}
+
+
+/* 
+ * OVERALL STYLING 
+ */
+
+@media screen and (max-width: 991px) {
+    .default-page-template {
+        .cust-margin-0 {
+            margin: 0 !important;
+        }
+        .cust-pt-0 {
+            padding-top: 0 !important;
+        }
+        .small-screen-vspacer {
+            height: 20px;
+        }
+
+        h1 {
+            font-size: 32px !important;
+            text-align: center;
+        }
+
+        .mmt-about-service {
+            padding: 0 !important;
+            margin-bottom: 0 !important;
+        }
+        .mmt-about-service .remove-padding {
+            padding: 0 !important;
+        }
+        .mmt-papercard-container .remove-padding {
+            padding-bottom: 0 !important;
+        }
+
+        .card-fill-bottom-wrapper {
+            &.cust-pt-0 {
+                padding-top: 0 !important;
+            }
+            .stack-order {
+                display: block;
+            }
+            .align-items-start {
+                margin: 0 !important;
+            }
+            .card-ends {
+                margin-bottom: 32px !important;
+            }
+            .end-cta {
+                padding-bottom: 0 !important;
+            }
+        }
+        #carousel-parent {
+            padding-top: 3rem !important;
+            padding-bottom: 55px !important;
+            overflow: hidden;
+        }
+
+        #carousel-parent .owl-nav button {
+            transition: all .2s ease-out !important;
+        }
+        #carousel-parent .owl-nav button:hover {
+            background-color: rgba(0, 12, 30, .35) !important;
+        }
+        #carousel-parent.hover-green .owl-nav button:hover {
+            background-color: rgba(25, 184, 168, .35) !important;
+        }
+
+        .owl-carousel {
+            padding: 0 !important;
+
+            .owl-stage .owl-item {
+                .mmt-car-content {
+                    box-shadow: 0 14px 28px rgba(0, 12, 30, .35), 0 10px 10px rgba(0, 12, 30, .32);
+                }
+
+                .mmt-car-content.green {
+                    box-shadow: 0 14px 28px rgba(25, 184, 168, .35), 0 10px 10px rgba(25, 184, 168, .32);
+                }
+            }
+
+            .mmt-car-content {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                height: 250px !important;
+                padding: 32px 24px !important;
+                margin: 30px 30px 40px;
+                border: 0 !important;
+                border-radius: 10px !important;
+
+                h3 {
+                    margin: 0 !important;
+                }
+
+                p {
+                    margin-top: .7rem !important;
+                    margin-bottom: 0 !important;
+                }
+            }
+
+            .owl-nav button {
+                margin-top: 0 !important;
+            }
+        }
+
+
+        // cards
+        .mmt-papercard-container {
+            padding: 32px 16px 0 !important;
+            margin-top: 0 !important;
+
+            .card-fill {
+                clear: both;
+                padding: 32px 16px !important;
+                margin: 0 !important;
+                text-align: center;
+                background-color: #000c1e;
+                color: #fff;
+                border-radius: 12px !important;
+
+                & + .card-fill {
+                    margin-top: 24px !important;
+                }
+
+                &.backdrop-green {
+                    background-color: #19b8a8 !important;
+                    color: #000;
+
+                    a.customNavLink button {
+                        background-color: #000c1e !important;
+                    }
+                }
+    
+                h2 {
+                    padding: 0 10px;
+                    font-size: 24px !important;
+                    font-weight: 700 !important;
+                }
+
+                p {
+                    text-align: center !important;
+                }
+    
+                .card-fill-list p {
+                    text-align: left !important;
+                }
+
+                a.customNavLink {
+                    display: inline-block;
+                    padding-top: 1rem;
+                    text-align: center;
+                }
+
+                a.customNavLink button {
+                    border-radius: .3rem;
+                    transition: all .2s ease-out !important;
+                }
+
+                a.customNavLink:hover button {
+                    border-radius: 2rem;
+                }
+            }
+
+        }
+
+        .ss-remove-pt {
+            padding-top: 0 !important;
+        }
+        .ss-remove-mb {
+            margin-bottom: 0 !important;
+        }
+    }
+}

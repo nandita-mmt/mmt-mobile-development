@@ -1,0 +1,38 @@
+.FaqBanner {
+	width: 100%;
+	background-image: url(../../../Assets/Images/Faq/faq_banner.webp);
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 250px;
+	margin-top: 120px;
+	position: relative;
+	.mmt-paper-heading {
+		position: absolute;
+		width: 65%;
+		background-image: linear-gradient(to right, #111328, #01426e, #19b8a8);
+		bottom: -110px;
+		right: 16px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
+		padding: 50px;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.FaqBanner {
+		.mmt-paper-heading {
+			width: 100%;
+			right: 0px;
+		}
+	}
+}
+@media only screen and (max-width: 576px) {
+	.FaqBanner {
+		.mmt-paper-heading {
+			padding: 25px 20px;
+		}
+	}
+}

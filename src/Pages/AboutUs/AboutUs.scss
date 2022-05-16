@@ -1,0 +1,293 @@
+.Teams {
+}
+
+
+/* 
+ * MAIN 
+ */
+
+ .default-page-main {
+	width: 100%;
+	height: auto;
+	.mmt-papercard-container {
+		.mmt-test-curve {
+			position: absolute;
+			margin: auto;
+			left: 0;
+			right: 0;
+		}
+		.mmt-card-holder {
+			display: grid;
+			grid-gap: 3.3rem;
+			grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
+		}
+	}
+   .man{
+	margin-top: -71px;
+	margin-left: 200px;
+   }
+   .test{
+   width: 30%;
+   }
+	.mmt-car-content {
+		height: 510px;
+		display: flex;
+		justify-content: flex-start;
+		flex-direction: column;
+	}
+
+	.owl-carousel {
+		.mmt-about-service-in {
+			border: 1px solid #c9c9d2;
+		}
+	}
+	.mmt-co-founder {
+		margin-top: 100px;
+		.mmt-co-founder-img {
+			height: 520px;
+			width: 60%;
+			background-image: url(../../Assets/Images/AboutUs//about-main.webp);
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+		.mmt-co-founder-detail {
+			height: 500px;
+			width: 50%;
+			position: absolute;
+			background: #ffffff;
+			box-shadow: 0px 3px 20px #00000012;
+			right: 0px;
+			bottom: -50px;
+			padding: 50px;
+			display: flex;
+			justify-content: center;
+			flex-direction: column;
+			align-items: flex-start;
+			line-height: 33px;
+		}
+	}
+	.mmt-post {
+		margin-top: 100px;
+		.mmt-post-img {
+			height: 400px;
+			width: 80%;
+			background-image: url(../../Assets/Images/Teams/dummy-image.webp);
+			background-size: cover;
+			background-position: center;
+			background-repeat: no-repeat;
+		}
+		.mmt-post-detail {
+			height: 120px;
+			width: 50%;
+			position: absolute;
+			background: #ffffff;
+			box-shadow: 0px 3px 20px #00000012;
+			right: 0px;
+			bottom: -50px;
+			padding: 20px;
+			display: flex;
+			justify-content: center;
+			flex-direction: column;
+			align-items: flex-start;
+			line-height: 33px;
+		}
+	}
+	.mmt-web-resp-txt {
+		font-size: 60px;
+	}
+	.mmt-web-practice-key {
+		height: 450px;
+	}
+}
+@media only screen and (max-width: 767px) {
+	.default-page-main {
+		.mmt-about-service-in {
+			border-right: none;
+		}
+		.mmt-web-practice-key {
+			height: auto;
+		}
+	}
+}
+
+@media only screen and (max-width: 400px) {
+	.default-page-main {
+		.mmt-web-resp-txt {
+			font-size: 45px;
+		}
+	}
+}
+
+
+/* 
+ * OVERALL STYLING 
+ */
+
+ @media screen and (max-width: 991px) {
+    .default-page-template {
+        .cust-margin-0 {
+            margin: 0 !important;
+        }
+        .cust-pt-0 {
+            padding-top: 0 !important;
+        }
+        .small-screen-vspacer {
+            height: 20px;
+        }
+
+        h1 {
+            font-size: 32px !important;
+            text-align: center;
+        }
+
+        .mmt-about-service {
+            padding: 0 !important;
+            margin-bottom: 0 !important;
+        }
+        .mmt-about-service .remove-padding {
+            padding: 0 !important;
+        }
+        .mmt-papercard-container .remove-padding {
+            padding-bottom: 0 !important;
+        }
+
+        .card-fill-bottom-wrapper {
+            &.cust-pt-0 {
+                padding-top: 0 !important;
+            }
+            .stack-order {
+                display: block;
+            }
+            .align-items-start {
+                margin: 0 !important;
+            }
+            .card-ends {
+                margin-bottom: 32px !important;
+            }
+            .end-cta {
+                padding-bottom: 0 !important;
+            }
+        }
+        #carousel-parent {
+            padding-top: 3rem !important;
+            padding-bottom: 55px !important;
+            overflow: hidden;
+        }
+
+        #carousel-parent .owl-nav button {
+            transition: all .2s ease-out !important;
+        }
+        #carousel-parent .owl-nav button:hover {
+            background-color: rgba(0, 12, 30, .35) !important;
+        }
+        #carousel-parent.hover-green .owl-nav button:hover {
+            background-color: rgba(25, 184, 168, .35) !important;
+        }
+
+        .owl-carousel {
+            padding: 0 !important;
+
+            .owl-stage .owl-item {
+                .mmt-car-content {
+                    box-shadow: 0 14px 28px rgba(0, 12, 30, .35), 0 10px 10px rgba(0, 12, 30, .32);
+                }
+
+                .mmt-car-content.green {
+                    box-shadow: 0 14px 28px rgba(25, 184, 168, .35), 0 10px 10px rgba(25, 184, 168, .32);
+                }
+            }
+
+            .mmt-car-content {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                height: 250px !important;
+                padding: 32px 24px !important;
+                margin: 30px 30px 40px;
+                border: 0 !important;
+                border-radius: 10px !important;
+
+                h3 {
+                    margin: 0 !important;
+                }
+
+                p {
+                    margin-top: .7rem !important;
+                    margin-bottom: 0 !important;
+                }
+            }
+
+            .owl-nav button {
+                margin-top: 0 !important;
+            }
+        }
+
+
+        // cards
+        .mmt-papercard-container {
+            padding: 32px 16px 0 !important;
+            margin-top: 0 !important;
+
+            .card-fill {
+                clear: both;
+                padding: 32px 16px !important;
+                margin: 0 !important;
+                text-align: center;
+                background-color: #000c1e;
+                color: #fff;
+                border-radius: 12px !important;
+
+                & + .card-fill {
+                    margin-top: 24px !important;
+                }
+
+                &.backdrop-green {
+                    background-color: #19b8a8 !important;
+                    color: #000;
+
+                    a.customNavLink button {
+                        background-color: #000c1e !important;
+                    }
+                }
+    
+                h2 {
+                    padding: 0 10px;
+                    font-size: 24px !important;
+                    font-weight: 700 !important;
+                }
+
+                p {
+                    text-align: center !important;
+                }
+    
+                .card-fill-list p {
+                    text-align: left !important;
+                }
+
+                a.customNavLink {
+                    display: inline-block;
+                    padding-top: 1rem;
+                    text-align: center;
+                }
+
+                a.customNavLink button {
+                    border-radius: .3rem;
+                    transition: all .2s ease-out !important;
+                }
+
+                a.customNavLink:hover button {
+                    border-radius: 2rem;
+                }
+            }
+
+        }
+
+        .ss-remove-pt {
+            padding-top: 0 !important;
+        }
+        .ss-remove-mb {
+            margin-bottom: 0 !important;
+        }
+    }
+}

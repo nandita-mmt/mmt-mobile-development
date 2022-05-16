@@ -1,0 +1,59 @@
+.CareerCards {
+	width: 100%;
+	height: auto;
+	margin-top: 100px;
+	.mmt-papercard-container {
+		.mmt-card-holder {
+			display: grid;
+			grid-gap: 3.3rem;
+			grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
+		}
+		.mmt-test-curve {
+			position: absolute;
+			margin: auto;
+			left: 0;
+			right: 0;
+		}
+	}
+	.mmt-job-type {
+		border-radius: 20px;
+		border: 1px solid #e95223;
+		background: #fdf1e9;
+		width: 80px;
+		p {
+			color: #e95223;
+		}
+	}
+	.mmt-img-crd {
+		height: 150px;
+		.mmt-company {
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			width: 100%;
+			height: 100%;
+		}
+	}
+	.mmt-scope-crd {
+		height: 450px;
+		box-shadow: 0px 20px 30px #00000029;
+	}
+
+	.hover_career {
+		transition: 0.5s;
+	}
+
+	.hover_career:hover {
+		box-shadow: 0px 3px 20px #00000029;
+	}
+
+	.file-input-width {
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 430px) {
+	.CareerCards {
+		margin-top: 150px;
+	}
+}

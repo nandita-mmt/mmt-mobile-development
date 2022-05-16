@@ -1,0 +1,91 @@
+.DeepLearningCards {
+	width: 100%;
+	height: auto;
+	.mmt-papercard-container {
+		.mmt-form-div {
+			box-shadow: 0px 5px 20px #0000001c;
+		}
+		.mmt-test-curve {
+			position: absolute;
+			margin: auto;
+			left: 0;
+			right: 0;
+		}
+	}
+	.mmt-company-div {
+		height: 40px;
+	}
+	.mmt-block-canvas {
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	.mmt-right-txt {
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	.mmt-company {
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		width: 40%;
+	}
+	.mmt-blockchain-crd {
+		height: 400px;
+		border-radius: 10px;
+		box-shadow: 0px 25px 50px #00000029;
+	}
+	.mmt-body-background {
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-image: url(../../../Assets/Images/Common/body-background.svg);
+	}
+	.mmt-block-solution {
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+}
+
+@media only screen and (max-width: 992px) {
+	.DeepLearningCards {
+		width: 100%;
+		height: auto;
+		.mmt-papercard-container {
+			.mmt-test-curve {
+				position: absolute;
+				margin: auto;
+				left: 0;
+				right: 0;
+			}
+		}
+		.mmt-blockchain-crd {
+			height: auto;
+		}
+		.mmt-company-div {
+			height: 49px;
+		}
+		.mmt-company {
+			width: 150px !important;
+			height: 100% !important;
+		}
+	}
+}
+
+@media only screen and (max-width: 576px) {
+	.DeepLearningCards {
+		.popover{
+			min-width: 350px !important;
+		}
+	}
+}
+
+@media only screen and (max-width: 360px) {
+	.DeepLearningCards {
+		.popover{
+			min-width: 300px !important;
+		}
+	}
+}

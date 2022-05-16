@@ -1,0 +1,87 @@
+@import '../../Assets/Css/CommonScss.scss';
+.services{
+    @include h2_style($color: $primary_color);
+    @extend %section_gap;
+    background: #f8f8f8;
+    position: relative;
+    @include dotted_style($Lvalue:20px, $Rvalue: inherit);
+    ul{
+        li{
+            a{
+                display: inline-block;
+                width: 100%;
+            }
+            &:nth-of-type(5n+5){
+                &:before{
+                    display:none;
+                }
+            }
+            &:nth-of-type(6),&:nth-of-type(7), &:nth-of-type(8), &:nth-of-type(9), &:nth-of-type(10){
+                &:after{
+                    display:none;
+                }
+            }
+            width: calc(100% / 5);
+            padding: 25px;
+            h4{
+                font-size: $mediam_font;
+                color: #000000;
+            }
+            .arrow{
+                width: 100%;
+                text-align: right;
+            }
+            // border-left:1px solid #cacbcf;
+            // border-bottom:1px solid #cacbcf;
+            &:before{
+                content: '';
+                position: absolute;
+                width: 1px;
+                height: 90%;
+                background-color: #cacbcf;
+                top: 10px;
+                right: 0px;
+            }
+            position: relative;
+            &:after{
+                content: '';
+                position: absolute;
+                width: 90%;
+                height: 1px;
+                background-color: #cacbcf;
+                bottom: 0px;
+                right: 0px;
+                left:0px;
+                margin:0 auto;
+            }
+            img{
+                text-align: right;
+            }
+            &:hover{
+                background: $secondary_color;
+                h4{
+                    color: #ffffff;
+                }
+                span{
+                    img{display: none;}
+                    .hover{
+                        display: block;
+                    }
+                }
+            }
+            span{
+                width: 50px;
+                height: 50px;
+                overflow: hidden;
+                display: inline-block;
+                margin-bottom: 10px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                .hover{
+                    display: none;
+                }
+            }
+        }
+    }
+}

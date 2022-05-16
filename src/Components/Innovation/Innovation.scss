@@ -1,0 +1,143 @@
+.Innovation {
+	width: 100%;
+	height: 900px;
+	position: relative;
+	z-index: 1;
+	.mmt-ino-bg {
+		width: 70%;
+		height: 75%;
+		background: #191b27;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: -1;
+	}
+	.mmt-ino-hash {
+		position: absolute;
+		left: -12% 1important;
+		top: 26%;
+		width: 105px;
+	}
+	.mmt-inovation-lg {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+	}
+	.mmt-inovation-xs {
+		display: none;
+	}
+	.mmt-ino-curve {
+		width: 140px;
+	}
+	.mmt-ino-face {
+		width: 65px;
+	}
+	.mmt-ino-video {
+		width: 100%;
+	}
+	.mmt-ino-video {
+		height: 100%;
+		width: 98%;
+		left: 2%;
+	}
+	.mmt-play-btn {
+		bottom: 50px;
+		right: 50px;
+		z-index: 100;
+		width: 145px;
+		position: absolute;
+		height: 144px;
+		background: transparent !important;
+		border: none !important;
+	}
+
+	.mmt-vid-holding-div {
+		height: 500px;
+	}
+	.mmt-ino-vid-bg {
+		top: -38px;
+		width: 78%;
+		z-index: -1;
+	}
+}
+@media only screen and (max-width: 767px) {
+	.Innovation {
+		height: 500px !important;
+		.mmt-ino-vid-bg {
+			top: -38px;
+		}
+		.mmt-play-btn {
+			bottom: 25px;
+			z-index: 100;
+			width: 100px;
+			height: 100px;
+		}
+		.mmt-vid-holding-div {
+			height: 250px;
+		}
+	}
+}
+@media only screen and (max-width: 576px) {
+	.Innovation {
+		.mmt-inovation-xs {
+			flex-direction: column !important;
+		}
+	}
+}
+
+@media only screen and (max-width: 991px) {
+	.Innovation {
+		.mmt-ino-hash {
+			display: none;
+		}
+		.mmt-inovation-lg {
+			display: none;
+		}
+		.mmt-inovation-xs {
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			align-items: center;
+		}
+		.mmt-ino-bg {
+			width: 100%;
+			height: 100%;
+		}
+		.mmt-ino-vid-bg {
+			width: 98%;
+		}
+		.mmt-ino-video {
+			height: 100%;
+			width: 98%;
+			left: 2%;
+		}
+	}
+}
+@media only screen and (max-width: 1200px) {
+	.Innovation {
+		height: 700px;
+	}
+}
+@media only screen and (max-width: 1400px) {
+	.Innovation {
+		height: 800px;
+		.mmt-ino-hash {
+			left: -12% !important;
+		}
+	}
+}
+@media only screen and (max-width: 1600px) {
+	.Innovation {
+		.mmt-ino-hash {
+			left: -12% !important;
+		}
+	}
+}
+@media only screen and (max-width: 1900px) {
+	.Innovation {
+		.mmt-ino-hash {
+			left: -12% !important;
+		}
+	}
+}

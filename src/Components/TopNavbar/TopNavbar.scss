@@ -1,0 +1,168 @@
+$breadcrumb-divider: quote('>');
+
+.TopNavbar {
+	width: 100%;
+	// position: absolute;
+	z-index: 90;
+	.navbar {
+		padding: 0px;
+	}
+	.nav-link {
+		display: flex !important;
+		align-items: center !important;
+		color: #ffffff;
+		font-weight: 400;
+	}
+	.navbar-nav {
+		padding: 0px;
+	}
+	.mmt-logo-wht {
+		width: 200px;
+		padding-top: 10px;
+	}
+	.mmt-logo-purp {
+		width: 130px;
+	}
+	.breadcrumb {
+		margin-bottom: 0px;
+		padding-top: 10px;
+	}
+	.breadcrumb-item {
+		a {
+			text-decoration: none;
+		}
+	}
+	.mmt-2nd-link {
+		text-transform: capitalize;
+	}
+
+	.mmt-responsive-btn {
+		display: none;
+	}
+	.custom-mg {
+		margin-top: 5px;
+	}
+	.middle-item {
+		margin-right: 20px;
+	}
+}
+.modified-nav-link {
+	color: #000000 !important;
+}
+
+@media only screen and (max-width: 576px) {
+	.TopNavbar {
+		.mmt-logo-wht {
+			width: 150px !important;
+			padding-top: 10px;
+		}
+		.mmt-header-btn-txt {
+			font-size: 14px;
+		}
+		.mmt-big-screen-btn {
+			display: none;
+		}
+		.mmt-responsive-btn {
+			display: block;
+			margin-right: 50px;
+		}
+	}
+}
+
+@media only screen and (max-width: 375px) {
+	.TopNavbar {
+		.btn-spcl-wht {
+			padding-left: 20px !important;
+			padding-right: 20px !important;
+		}
+	}
+}
+
+@media only screen and (max-width: 320px) {
+	.TopNavbar {
+		.btn-spcl-wht {
+			padding-left: 7px !important;
+			padding-right: 7px !important;
+		}
+	}
+}
+
+@media only screen and (max-width: 790px) {
+	.TopNavbar {
+		.mmt-big-screen-btn {
+			margin-right: 20px;
+		}
+	}
+}
+@media only screen and (max-width: 767px) {
+	.TopNavbar {
+		.mmt-big-screen-btn {
+			margin-right: 50px;
+		}
+	}
+}
+@media only screen and (min-width: 992px) {
+	.TopNavbar {
+		.mmt-big-screen-btn {
+			margin-right: 50px;
+		}
+	}
+}
+@media only screen and (min-width: 1100px) {
+	.TopNavbar {
+		.mmt-big-screen-btn {
+			margin-right: 0px;
+		}
+	}
+}
+@media only screen and (min-width: 1200px) {
+	.TopNavbar {
+		.mmt-big-screen-btn {
+			margin-right: 50px;
+		}
+	}
+}
+@media only screen and (min-width: 1300px) {
+	.TopNavbar {
+		.mmt-big-screen-btn {
+			margin-right: 0px;
+		}
+	}
+}
+@media only screen and (min-width: 1400px) {
+	.TopNavbar {
+		.mmt-big-screen-btn {
+			margin-right: 50px;
+		}
+	}
+}
+@media only screen and (min-width: 1500px) {
+	.TopNavbar {
+		.mmt-big-screen-btn {
+			margin-right: 0px;
+		}
+	}
+}
+@media only screen and (min-width: 1600px) {
+	.TopNavbar {
+		.mmt-big-screen-btn {
+			margin-right: 50px;
+		}
+	}
+}
+@media only screen and (min-width: 1700px) {
+	.TopNavbar {
+		.mmt-big-screen-btn {
+			margin-right: 0px;
+		}
+	}
+}
+@media only screen and (min-width: 1800px) {
+	.TopNavbar {
+		.mmt-big-screen-btn {
+			margin-right: 50px;
+		}
+	}
+}
+
+

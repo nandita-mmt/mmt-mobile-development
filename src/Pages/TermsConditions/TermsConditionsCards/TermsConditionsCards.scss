@@ -1,0 +1,106 @@
+.MobilityPracticeCards {
+	width: 100%;
+	height: auto;
+	.mmt-papercard-container {
+		.mmt-test-curve {
+			position: absolute;
+			margin: auto;
+			left: 0;
+			right: 0;
+		}
+		.mmt-card-holder {
+			display: grid;
+			grid-gap: 3.3rem;
+			grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
+		}
+	}
+
+	.mmt-car-content {
+		height: 510px;
+		display: flex;
+		justify-content: flex-start;
+		flex-direction: column;
+	}
+
+	.owl-carousel {
+		.mmt-about-service-in {
+			border: 1px solid #c9c9d2;
+		}
+	}
+	.mmt-co-founder {
+		margin-top: 100px;
+		.mmt-co-founder-img {
+			height: 520px;
+			width: 60%;
+			background-image: url(../../../Assets/Images/AboutUs//about-main.webp);
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+		.mmt-co-founder-detail {
+			height: 500px;
+			width: 50%;
+			position: absolute;
+			background: #ffffff;
+			box-shadow: 0px 3px 20px #00000012;
+			right: 0px;
+			bottom: -50px;
+			padding: 50px;
+			display: flex;
+			justify-content: center;
+			flex-direction: column;
+			align-items: flex-start;
+			line-height: 33px;
+		}
+	}
+	.mmt-post {
+		margin-top: 100px;
+		.mmt-post-img {
+			height: 400px;
+			width: 80%;
+			background-image: url(../../../Assets/Images/Teams/dummy-image.webp);
+			background-size: cover;
+			background-position: center;
+			background-repeat: no-repeat;
+		}
+		.mmt-post-detail {
+			height: 120px;
+			width: 50%;
+			position: absolute;
+			background: #ffffff;
+			box-shadow: 0px 3px 20px #00000012;
+			right: 0px;
+			bottom: -50px;
+			padding: 20px;
+			display: flex;
+			justify-content: center;
+			flex-direction: column;
+			align-items: flex-start;
+			line-height: 33px;
+		}
+	}
+	.mmt-web-resp-txt {
+		font-size: 60px;
+	}
+	.mmt-web-practice-key {
+		height: 450px;
+	}
+}
+@media only screen and (max-width: 767px) {
+	.MobilityPracticeCards {
+		.mmt-about-service-in {
+			border-right: none;
+		}
+		.mmt-web-practice-key {
+			height: auto;
+		}
+	}
+}
+
+@media only screen and (max-width: 400px) {
+	.MobilityPracticeCards {
+		.mmt-web-resp-txt {
+			font-size: 45px;
+		}
+	}
+}

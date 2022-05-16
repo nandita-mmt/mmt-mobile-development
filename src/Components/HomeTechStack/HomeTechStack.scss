@@ -1,0 +1,110 @@
+@import '../../Assets/Css/CommonScss.scss';
+.tech{
+    background: $primary_color;
+    @extend %section_gap;
+    @include h2_style($color: #fff);
+    position: relative;
+    @include dotted_style($Lvalue:inherit, $Rvalue: 20px);
+    .card{
+        background: transparent;
+        border:0px;
+    }
+    .card-header{
+        background: transparent;
+        border-color: #ffffff;
+        border-top:1px solid #ffffff;
+        border-bottom: 0px;
+        border-radius: 0px;
+        button{
+            padding: 0px;
+            width: 100%;
+            position: relative;
+            text-decoration: none !important;
+            border:0px !important;
+            &:before{
+                content: '';
+                position: absolute;
+                right: 10px;
+                width: 20px;
+                height: 1px;
+                background: #ffffff;
+                top:5px;
+            }
+            &:after{
+                content: '';
+                position: absolute;
+                right: 10px;
+                width: 20px;
+                height: 1px;
+                background: #ffffff;
+                top:5px;
+                transform-origin: 50% 50%;
+                transform: rotate(90deg);
+                transition:0.5s;
+            }
+            h4{
+                font-size: 16px;
+                margin-bottom: 0px;
+                color: #fff;
+                text-align: left;
+                font-weight: 300;
+                font{
+                    color: $secondary_color;
+                }
+                span{
+                    display: inline-block;
+                    margin-left: 60px;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                }
+            }
+            &:focus{
+                outline: none !important;
+                border:0px !important;
+                text-decoration: none !important
+            }
+            &:active{
+                outline: none !important;
+                border:0px !important;
+                text-decoration: none !important
+            }
+            &:hover{
+                text-decoration: none;
+                border:0px !important;
+                text-decoration: none !important;
+            }
+        }
+        button.collapsed{
+            &:after{
+                transform: rotate(0deg);
+            }
+            
+        }
+    }
+    .card-body{
+
+        ul{
+            
+            li{
+                flex: 0 0 30%;
+                color: #ffffff;
+                font-weight: 300;
+                margin-bottom: 30px;
+                img{
+                    margin-right: 15px;
+                }
+            }
+        }
+        .col-lg-3{
+            display: flex;
+            align-items:center;
+            justify-content:center;
+            a{
+                @include btn_style($bgColor: $secondary_color);
+            }
+        }
+    }
+    .collapse.show{
+        border-bottom: 1px solid $secondary_color;
+    }
+}

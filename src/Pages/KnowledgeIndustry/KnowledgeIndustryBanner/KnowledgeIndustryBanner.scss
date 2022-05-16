@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import '~bootstrap/scss/bootstrap';
+
+.KnowledgeIndustryBanner {
+	width: 100%;
+	background-image: url(../../../Assets/Images/InnovationLab/innovation-banner.webp);
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 250px;
+	margin-top: 120px;
+	.mmt-paper-heading {
+		position: absolute;
+		width: 65%;
+		bottom: -70px;
+		background-image: linear-gradient(to right, #111328, #01426e, #19b8a8);
+		right: 0px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
+		padding: 20px;
+	}
+	.mmt-heading-font {
+		font-size: 60px;
+	}
+	// Animated Footer Btn Start Here
+	.button-animation {
+		text-align: center;
+		margin: 50px 0px;
+		button {
+			width: 150px;
+			height: 150px;
+			background-color: #482080;
+			border-radius: 50%;
+			margin: 0 auto;
+			border: 0px;
+			color: #ffffff;
+			font-size: 16px;
+			padding: 20px 0px 0px;
+			position: relative;
+			cursor: pointer;
+			svg {
+				position: absolute;
+				top: 2px;
+				left: 0px;
+				right: 0px;
+				margin: 0 auto;
+				path {
+					stroke-dasharray: 428;
+					stroke-dashoffset: 0;
+					fill: transparent;
+					stroke-width: 1px;
+					stroke: #ffffff;
+					animation: round 2.5s linear forwards;
+					display: none;
+				}
+			}
+			span {
+				display: inline-block;
+				width: 100%;
+				margin-top: 10px;
+				img {
+					animation-fill-mode: forwards;
+					animation-timing-function: easy-in;
+					/*display: none;*/
+				}
+			}
+		}
+		button:hover {
+			background-color: #19b8a8;
+			svg {
+				path {
+					display: block;
+				}
+			}
+			span {
+				img {
+					animation: bounce 0.8s alternate infinite;
+				}
+			}
+		}
+	}
+
+	@keyframes bounce {
+		0% {
+			transform: translateY(0px);
+		}
+		100% {
+			transform: translateY(-10px);
+		}
+	}
+	@keyframes round {
+		0% {
+			/*stroke-dasharray: 427;*/
+			stroke-dashoffset: 428;
+		}
+		100% {
+			/*stroke-dasharray: 0;*/
+			stroke-dashoffset: 0;
+		}
+	}
+	.mmt-web-resp-txt {
+		font-size: 60px;
+	}
+	// Animated Footer Button Ends Here
+}
+
+@media only screen and (max-width: 767px) {
+	.KnowledgeIndustryBanner {
+		height: 450px;
+		.mmt-paper-heading {
+			position: absolute;
+			width: 100%;
+		}
+	}
+}
+@media only screen and (max-width: 400px) {
+	.KnowledgeIndustryBanner {
+		height: 500px;
+
+		.mmt-web-resp-txt {
+			font-size: 45px;
+		}
+	}
+}

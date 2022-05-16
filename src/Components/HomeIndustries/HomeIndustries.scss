@@ -1,0 +1,45 @@
+@import '../../Assets/Css/CommonScss.scss';
+
+.industry{
+    @include h2_style($color: $primary_color);
+    @extend %section_gap;
+    padding-bottom: 0px;
+    position: relative;
+    @include dotted_style($Lvalue:20px, $Rvalue: inherit);
+    .section{
+        overflow: hidden;
+        position: relative;
+        margin-bottom: 30px;
+        border-radius: 7px;
+        position: relative;
+        img{
+            width: 100%;
+        }
+        &:after{
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-image: linear-gradient(transparent, $primary_color);
+            z-index: 0;
+            bottom: 0px;
+            left:0px;
+        }
+        h4{
+            position: absolute;
+            padding: 15px;
+            bottom: 0px;
+            width: 100%;
+            margin-bottom: 0px;
+            color: #fff;
+            font-size: 24px;
+            z-index: 99;
+        }
+
+    }
+    a{
+        @include btn_style($bgColor: $secondary_color);
+        margin-top: 80px;
+        display: inline-block;
+    }
+}

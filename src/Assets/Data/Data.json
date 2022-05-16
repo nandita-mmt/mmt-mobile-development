@@ -1,0 +1,188 @@
+{
+    "Carrear":[
+        {   
+            "id":1,
+            "post":"Senior Project Manager1",
+            "details":"Bring knowledge and understand trends, business/technology best practices, needs and guide/advise existing engagements/give inputs to planning process across people, process, technology and data solutions/recommendations in a particular functional area"
+        },
+        {   
+            "id":2,
+            "post":"Senior Project Manager2",
+            "details":"Bring knowledge and understand trends, business/technology best practices, needs and guide/advise existing engagements/give inputs to planning process across people, process, technology and data solutions/recommendations in a particular functional area"
+        },
+        {   
+            "id":3,
+            "post":"Senior Project Manager3",
+            "details":"Bring knowledge and understand trends, business/technology best practices, needs and guide/advise existing engagements/give inputs to planning process across people, process, technology and data solutions/recommendations in a particular functional area"
+        },
+        {   
+            "id":4,
+            "post":"Senior Project Manager4",
+            "details":"Bring knowledge and understand trends, business/technology best practices, needs and guide/advise existing engagements/give inputs to planning process across people, process, technology and data solutions/recommendations in a particular functional area"
+        },
+        {   
+            "id":5,
+            "post":"Senior Project Manager5",
+            "details":"Bring knowledge and understand trends, business/technology best practices, needs and guide/advise existing engagements/give inputs to planning process across people, process, technology and data solutions/recommendations in a particular functional area"
+        },
+        {   
+            "id":6,
+            "post":"Senior Project Manager6",
+            "details":"Bring knowledge and understand trends, business/technology best practices, needs and guide/advise existing engagements/give inputs to planning process across people, process, technology and data solutions/recommendations in a particular functional area"
+        },
+        {   
+            "id":7,
+            "post":"Senior Project Manager7",
+            "details":"Bring knowledge and understand trends, business/technology best practices, needs and guide/advise existing engagements/give inputs to planning process across people, process, technology and data solutions/recommendations in a particular functional area"
+        },
+        {   
+            "id":8,
+            "post":"Senior Project Manager8",
+            "details":"Bring knowledge and understand trends, business/technology best practices, needs and guide/advise existing engagements/give inputs to planning process across people, process, technology and data solutions/recommendations in a particular functional area"
+        },
+        {   
+            "id":9,
+            "post":"Senior Project Manager9",
+            "details":"Bring knowledge and understand trends, business/technology best practices, needs and guide/advise existing engagements/give inputs to planning process across people, process, technology and data solutions/recommendations in a particular functional area"
+        },
+        {   
+            "id":10,
+            "post":"Senior Project Manager10",
+            "details":"Bring knowledge and understand trends, business/technology best practices, needs and guide/advise existing engagements/give inputs to planning process across people, process, technology and data solutions/recommendations in a particular functional area"
+        },
+        {   
+            "id":11,
+            "post":"Senior Project Manager11",
+            "details":"Bring knowledge and understand trends, business/technology best practices, needs and guide/advise existing engagements/give inputs to planning process across people, process, technology and data solutions/recommendations in a particular functional area"
+        },
+        {   
+            "id":12,
+            "post":"Senior Project Manager12",
+            "details":"Bring knowledge and understand trends, business/technology best practices, needs and guide/advise existing engagements/give inputs to planning process across people, process, technology and data solutions/recommendations in a particular functional area"
+        }
+    ],
+    "Teams":[
+        {
+            "id":1,
+            "name": "Sayantan1",
+            "designation":"React Developer"
+        },
+        {
+            "id":2,
+            "name": "Sayantan2",
+            "designation":"React Developer"
+        },
+        {
+            "id":3,
+            "name": "Sayantan3",
+            "designation":"React Developer"
+        },
+        {
+            "id":4,
+            "name": "Sayantan4",
+            "designation":"React Developer"
+        },
+        {
+            "id":5,
+            "name": "Sayantan5",
+            "designation":"React Developer"
+        },
+        {
+            "id":6,
+            "name": "Sayantan6",
+            "designation":"React Developer"
+        },
+        {
+            "id":7,
+            "name": "Sayantan7",
+            "designation":"React Developer"
+        },
+        {
+            "id":8,
+            "name": "Sayantan8",
+            "designation":"React Developer"
+        },
+        {
+            "id":9,
+            "name": "Sayantan9",
+            "designation":"React Developer"
+        },
+        {
+            "id":10,
+            "name": "Sayantan10",
+            "designation":"React Developer"
+        },
+        {
+            "id":11,
+            "name": "Sayantan11",
+            "designation":"React Developer"
+        },
+        {
+            "id":12,
+            "name": "Sayantan12",
+            "designation":"React Developer"
+        }
+    ],
+    "Whitepaper":[
+        {
+            "id":1,
+            "title":"Native Apps Or Progressive Web Apps: Which One Is The Best Bet1?",
+            "description":"These days, businesses try to use all online channels to promote their business and reach a wide audience."
+        },
+        {
+            "id":2,
+            "title":"Native Apps Or Progressive Web Apps: Which One Is The Best Bet2?",
+            "description":"These days, businesses try to use all online channels to promote their business and reach a wide audience."
+        },
+        {
+            "id":3,
+            "title":"Native Apps Or Progressive Web Apps: Which One Is The Best Bet3?",
+            "description":"These days, businesses try to use all online channels to promote their business and reach a wide audience."
+        },
+        {
+            "id":4,
+            "title":"Native Apps Or Progressive Web Apps: Which One Is The Best Bet4?",
+            "description":"These days, businesses try to use all online channels to promote their business and reach a wide audience."
+        },
+        {
+            "id":5,
+            "title":"Native Apps Or Progressive Web Apps: Which One Is The Best Bet5?",
+            "description":"These days, businesses try to use all online channels to promote their business and reach a wide audience."
+        },
+        {
+            "id":6,
+            "title":"Native Apps Or Progressive Web Apps: Which One Is The Best Bet6?",
+            "description":"These days, businesses try to use all online channels to promote their business and reach a wide audience."
+        },
+        {
+            "id":7,
+            "title":"Native Apps Or Progressive Web Apps: Which One Is The Best Bet7?",
+            "description":"These days, businesses try to use all online channels to promote their business and reach a wide audience."
+        },
+        {
+            "id":8,
+            "title":"Native Apps Or Progressive Web Apps: Which One Is The Best Bet8?",
+            "description":"These days, businesses try to use all online channels to promote their business and reach a wide audience."
+        },
+        {
+            "id":9,
+            "title":"Native Apps Or Progressive Web Apps: Which One Is The Best Bet9?",
+            "description":"These days, businesses try to use all online channels to promote their business and reach a wide audience."
+        },
+        {
+            "id":10,
+            "title":"Native Apps Or Progressive Web Apps: Which One Is The Best Bet10?",
+            "description":"These days, businesses try to use all online channels to promote their business and reach a wide audience."
+        },
+        {
+            "id":11,
+            "title":"Native Apps Or Progressive Web Apps: Which One Is The Best Bet11?",
+            "description":"These days, businesses try to use all online channels to promote their business and reach a wide audience."
+        },
+        {
+            "id":12,
+            "title":"Native Apps Or Progressive Web Apps: Which One Is The Best Bet12?",
+            "description":"These days, businesses try to use all online channels to promote their business and reach a wide audience."
+        }
+    ]
+}

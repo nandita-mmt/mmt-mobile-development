@@ -1,0 +1,45 @@
+@import '../../Assets/Css/CommonScss.scss';
+.products{
+    @include h2_style($color: $primary_color);
+    @extend %section_gap;
+    .image{
+        min-height: 300px;
+        display: flex;
+        align-items:center;
+        justify-content:center;
+        position: relative;
+        z-index: 0;
+        &:before{
+            content: '';
+            position: absolute;
+            width: 70%;
+            height: 240px;
+            border-radius: 50%;
+            background: #f7f7f7;
+            z-index: -1;
+            animation: scale 5s linear infinite;
+            transform: scale(0);
+        }
+        &:after{
+            content: '';
+            position: absolute;
+            width: 70%;
+            height: 240px;
+            border-radius: 50%;
+            background: #ddd;
+            z-index: -1;
+            animation: scale 5s linear infinite;
+            animation-delay:3s;
+            transform: scale(0);
+        }
+    }
+    h4{
+        font-size: $mediam_font;
+    }
+    a{
+        @include btn_style($bgColor: #2a8280);
+        margin-top: 30px;
+        position: relative;
+        z-index: 99;
+    }
+}

@@ -1,0 +1,81 @@
+.top-banner{
+    background:linear-gradient(90deg, #11192e, #19b2a3);
+    color:#fff;
+    position: relative;
+    
+}
+.spiner{
+        // position: absolute;
+        // width: 100%;
+        // height: 100%;
+        // top:0px;
+        // left:0px;
+        // right: 0px;
+        img{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top:0px;
+            left:0px;
+            right: 0px;
+            margin:0 auto;
+            transition:20s;
+        }
+        .one{
+            width: 15%;
+            background-size: cover;
+            // object-fit:cover;
+            animation: rotate 10s linear infinite;
+            animation-fill-mode: backwards;
+        }
+        .two{
+            width: 25%;
+            background-size: cover;
+            animation: rotate 8s alternate infinite;
+            animation-fill-mode: forwards;
+        }
+        .three{
+            width: 35%;
+            background-size: cover;
+            animation: rotate 10s linear infinite;
+            animation-fill-mode: backwards;
+        }
+        .four{
+            width: 45%;
+            background-size: cover;
+            animation: rotate 15s alternate infinite;
+            animation-fill-mode: forwards;
+        }
+    }
+@keyframes rotate{
+    0%{transform: rotate(0deg)}
+    100%{transform: rotate(360deg)}
+}
+.top-banner-inner{margin: 14% auto;  text-align: center; }
+.banner-heading{
+    font-size: 100px;
+    font-weight: 100;
+}
+.banner-heading span{
+   font-weight: 600;
+}
+.banner-description{
+    font-weight: 400;
+    font-size: 20px;
+    // width: 826px;   
+    margin-bottom: 40px;
+}
+.contact-our-experts-button{
+    height: 50px;
+    width: 210px;
+    background-color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    color: #167b79;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+.contact-our-experts-button:hover{text-decoration: none; color: #167b79;}

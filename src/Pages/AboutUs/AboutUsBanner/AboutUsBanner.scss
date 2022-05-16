@@ -1,0 +1,49 @@
+.AboutUsBanner {
+	width: 100%;
+	background-image: url(../../../Assets/Images/AboutUs/about-bnr.webp);
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: auto;
+	margin-top: 120px;
+	position: relative;
+	.mmt-paper-heading {
+		width: 200px;
+		background: #000000;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
+		align-items: center;
+		border-radius: 10px;
+		float: right;
+	}
+	.mmt-client-count {
+		width: 100%;
+		margin: 5px 0px;
+		height: 110px;
+		border: 1px solid #ffffff;
+		border-radius: 10px;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: flex-end;
+	}
+	.mmt-about-bnr-blur {
+		background-image: linear-gradient(to right, #111328, #01426e, #19b8a8);
+		opacity: 0.9;
+		height: 100%;
+	}
+}
+
+@media only screen and (max-width: 992px) {
+	.AboutUsBanner {
+		.mmt-paper-heading {
+			width: 100%;
+			flex-direction: row;
+		}
+		.mmt-client-count {
+			margin: 0px 5px;
+		}
+	}
+}

@@ -1,0 +1,33 @@
+.Face {
+	position: relative;
+	width: 65px;
+	height: 65px;
+	background: #482080;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	.lips {
+		width: 44px;
+		height: 39px;
+		border-bottom-left-radius: 25px;
+		border-bottom-right-radius: 25px;
+		border-color: #ffffff;
+		border-style: solid;
+		border-width: 0px 4px 4px 4px;
+		transition: 0.5s;
+		margin-bottom: 9px;
+	}
+}
+// .eyes {
+// 	display: flex;
+// 	margin-bottom: 20px;
+// 	.eye {
+// 		width: 3px;
+// 		height: 7px;
+// 		background: #ffffff;
+// 		margin: 0 5px;
+// 		display: block;
+// 	}
+// }

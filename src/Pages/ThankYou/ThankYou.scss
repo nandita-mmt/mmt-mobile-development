@@ -1,0 +1,106 @@
+
+.default-page-template {
+	.full-content-thank-you{
+		margin-top: 75px;
+		padding-top: 50px;
+		padding-bottom: 150px;
+		-webkit-background-size: cover;
+		background-size: cover;
+		background: linear-gradient(90deg, #11192e, #19b2a3);
+	}
+    .cust-margin-0 {
+        margin: 0 !important;
+    }
+}
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i");
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+// 		@font-face {
+//   font-family: 'MonotypeCorsiva';
+//   src: url('fonts/MonotypeCorsiva.eot?#iefix') format('embedded-opentype'),  url('fonts/MonotypeCorsiva.woff') format('woff'), url('fonts/MonotypeCorsiva.ttf')  format('truetype'), url('fonts/MonotypeCorsiva.svg#MonotypeCorsiva') format('svg');
+//   font-weight: normal;
+//   font-style: normal;
+// }
+		p, h1, h2, h3, h4, a {
+		  font-family: 'Mulish', sans-serif;
+		  margin: 0px;
+		}
+		
+		.thank_you{
+			text-align: center; width: 100%; height: auto; 
+            //position: absolute;
+			//height: 100%;
+		    top: 0px;
+		    //display: flex;
+		    align-items: center;
+		    justify-content: center;
+		}
+		.thanku_logo{
+			padding: 15px 0px 0px 10px;
+			width: 206px;
+			height: 55px;
+		}
+		.thank_you h1{
+			font-size: 70px !important;
+			color: #ffffff;
+			position: relative;
+		    margin-bottom: 25px;
+		    font-family: 'Mulish', sans-serif;
+			
+		}
+		.thank_you h1:after{
+			content: '';
+			position: absolute;
+			width: 100px;
+			height: 5px;
+			background-color: #ffffff;
+			border-radius: 35px;
+			left: 0px;
+			right: 0px;
+			margin:0 auto;
+			bottom: -3px;
+		}
+		.payment{margin: 10px 0px 20px;}
+		.payment p{font-size: 20px; color: #ffffff; font-weight: 200; text-transform: uppercase;}
+		.payment_amount{background-color: #fff; display: inline-block; padding: 0px 100px;
+			/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+52,ffffff+52&0+0,0.3+52,0+100 */
+background: -moz-linear-gradient(left,  rgba(255,255,255,0) 0%, rgba(255,255,255,0.3) 52%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.3) 52%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.3) 52%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 */
+
+		}
+		.payment_amount p{color: #ffffff; font-weight: 700; font-size: 30px;}
+		.payment_amount p sup{font-weight: 200;}
+		.client_name{font-size: 40px; color: #ffffff; font-weight: 200;}
+		.transition_id{border-top:1px solid #8acdcd57;border-bottom:1px solid #8acdcd57; width: auto; display: inline-block; padding: 4px 0px;    margin: 16px 0;}
+		.transition_id p{color: #ffffff; font-size: 16px; font-weight: 200;}
+		.transition_id p span{font-weight: 600; color: #fff002; }
+		
+		.thank_you a:hover{background-color: transparent; color: #fff; border-color: #ffffff; text-decoration: none;}
+		.other_details ul{margin: 0px; padding: 0px; list-style: none; text-align: center; display: flex;    justify-content: center; margin-top: 60px;}
+		.other_details ul li{display: flex; text-align: left; align-items: center;}
+		.other_details ul li p{font-size: 16px; color: #ffffff; font-weight: 200;margin-bottom: 8px;}
+		.other_details ul li a{padding: 0px; color: #ffffff; font-size: 16px; font-weight: 600; background-color: transparent; border:0px; margin-top: 0px; box-shadow: 0px 0px 0px; text-decoration: none;}
+		.other_details ul li img{margin-right: 15px;}
+		.other_details ul li:first-child{margin-right: 20px;}
+		.b-to-home{text-decoration: none; margin-top: 50px; display: inline-block;}
+		.thank_you a{background-color: #00ffff; font-size: 14px; color: #101b2e; border-radius: 50px; border:1px solid #00ffff; padding: 10px 40px; font-weight: 700; margin-top: 70px; display: inline-block;     box-shadow: 0px 2px 12px #003c7b40; transition: 0.5s;-webkit-transition: 0.5s;-moz-transition: 0.5s;}
+		.thanku_dec{width: 70%; margin:0 auto; margin-top: 30px;}
+		.thanku_dec p{color: #fff; font-size: 14px;}
+
+		@media(max-width:767px){
+			.thanku_logo {padding: 10px 0px 0px 5px;width: 180px;height: 50px;}
+			.thank_you h1 {font-size: 50px !important;	margin-bottom: 15px;}
+			.transition_id {margin: 8px 0;}
+			.thanku_dec{margin-top: 15px;}
+			.other_details ul,.thank_you a{margin-top: 35px;}
+			.other_details ul li p,.other_details ul li a{font-size: 13px;}
+			.other_details ul li:first-child{margin-right: 0;}
+		}
+		@media(max-width:360px){
+			.thanku_dec{width: 98%;}
+			.thanku_dec p{font-size: 13px;}
+			.transition_id p{font-size: 14px;}
+			.other_details ul li p{font-size: 12px;}
+			.thank_you a{padding: 10px 25px;}
+		}

@@ -1,0 +1,61 @@
+.PaperCards {
+	width: 100%;
+	height: auto;
+	.mmt-papercard-container {
+		.mmt-card-holder {
+			display: grid;
+			grid-gap: 3.3rem;
+			grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
+		}
+		.mmt-download-btn {
+			background-color: #482080;
+			border-radius: 35%;
+			height: 50px;
+			width: 50px;
+			border: none;
+			position: absolute;
+			top: -70px;
+			right: 20px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+	}
+	.mmt-whitepaper-img {
+		height: 275px;
+	}
+	.whitepaper-crd {
+		height: 580px;
+	}
+	.mmt-crd-body {
+		.fixedToBottom {
+			position: absolute;
+    		bottom: 25px;
+		}
+		.mmt-crd-title {
+			a {
+				color: #000000 !important;
+			}
+		}
+	}
+	.mmt-crd-body:hover {
+		.mmt-crd-title {
+			a {
+				color: #19b8a8 !important;
+			}
+		}
+	}
+}
+@media only screen and (max-width: 576px) {
+	.PaperCards {
+		.whitepaper-crd {
+			height: auto;
+		}
+	}
+}
+
+@media only screen and (max-width: 391px) {
+	.PaperCards {
+		margin-top: 100px;
+	}
+}

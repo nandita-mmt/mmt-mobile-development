@@ -1,0 +1,46 @@
+.CoreTechBanner {
+	width: 100%;
+	background-image: url(../../../Assets/Images/CoreTech//core-bnr.webp);
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 250px;
+	margin-top: 120px;
+	position: relative;
+	.mmt-paper-heading {
+		position: absolute;
+		width: 65%;
+		background-image: linear-gradient(to right, #111328, #01426e, #19b8a8);
+		bottom: -110px;
+		right: 16px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
+		padding: 50px;
+	}
+}
+
+@media only screen and (max-width: 992px) {
+	.CoreTechBanner {
+		.mmt-paper-heading {
+			// top: 200px;
+		}
+	}
+}
+@media only screen and (max-width: 767px) {
+	.CoreTechBanner {
+		.mmt-paper-heading {
+			// top: 200px;
+			width: 100%;
+			right: 0px;
+		}
+	}
+}
+@media only screen and (max-width: 576px) {
+	.CoreTechBanner {
+		.mmt-paper-heading {
+			padding: 25px 20px;
+		}
+	}
+}

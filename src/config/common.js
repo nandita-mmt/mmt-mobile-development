@@ -1,0 +1,1 @@
+export const LANDING_PAGE_URLS = ['/mobile-app-development-services-test','/thank-you']

@@ -1,0 +1,146 @@
+.TeamCards {
+	width: 100%;
+	height: auto;
+	margin-top: 100px;
+	.mmt-papercard-container {
+		.mmt-test-curve {
+			position: absolute;
+			margin: auto;
+			left: 0;
+			right: 0;
+		}
+		.mmt-card-holder {
+			display: grid;
+			grid-gap: 3.3rem;
+			grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
+		}
+	}
+	.mmt-co-founder {
+		.mmt-co-founder-img {
+			height: 825px;
+			width: 80%;
+			background-image: url(../../../Assets/Images/Teams/ceo.JPG);
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: 100% 100%;
+		}
+		.mmt-co-founder-detail {
+			height: 570px;
+			width: 50%;
+			position: absolute;
+			background: #ffffff;
+			box-shadow: 0px 3px 20px #00000012;
+			right: 0px;
+			bottom: -50px;
+			padding: 50px;
+			display: flex;
+			justify-content: center;
+			flex-direction: column;
+			align-items: flex-start;
+			line-height: 33px;
+		}
+	}
+	.mmt-post {
+		height: 280px;
+		.mmt-post-img {
+			img {
+				height: 230px;
+				width: 66%;
+				background-size: 100% 100%;
+				background-position: center;
+				background-repeat: no-repeat;
+				box-shadow: 0px 3px 20px #00000012;
+			}
+		}
+		.mmt-post-detail {
+			height: 80px;
+			width: 80%;
+			position: absolute;
+			background: #ffffff;
+			box-shadow: 0px 3px 20px #00000012;
+			right: 0px;
+			bottom: 0px;
+			padding: 10px 20px;
+		}
+	}
+}
+@media only screen and (max-width: 1199px) {
+	.TeamCards {
+		.mmt-co-founder {
+			.mmt-co-founder-img {
+				height: 700px;
+			}
+			.mmt-co-founder-detail {
+				height: 730px;
+			}
+		}
+	}
+}
+@media only screen and (max-width: 992px) {
+	.TeamCards {
+		.mmt-co-founder {
+			.mmt-co-founder-img {
+				height: 650px;
+			}
+			.mmt-co-founder-detail {
+				height: 630px;
+			}
+		}
+	}
+}
+@media only screen and (max-width: 767px) {
+	.TeamCards {
+		.mmt-co-founder {
+			.mmt-co-founder-img {
+				width: 100%;
+				height: 500px;
+			}
+			.mmt-co-founder-detail {
+				position: relative;
+				width: 100%;
+				height: 450px;
+				line-height: 33px;
+			}
+		}
+		.mmt-post {
+			padding-left: 25%;
+			.mmt-post-detail {
+				width: 50% !important;
+			}
+		}
+		.mmt-about-service-in {
+			border-right: none;
+		}
+	}
+}
+@media only screen and (max-width: 576px) {
+	.TeamCards {
+		.mmt-papercard-container {
+			.mmt-resp-font-xl {
+				font-size: 40px;
+			}
+		}
+		
+		.mmt-co-founder {
+			.mmt-co-founder-img {
+				height: 500px;
+				width: 100%;
+			}
+			.mmt-co-founder-detail {
+				height: 480px;
+				width: 100%;
+				position: relative;
+				background: #ffffff;
+				box-shadow: 0px 3px 20px #00000012;
+				right: 0px;
+				bottom: -50px;
+				padding: 20px;
+				display: flex;
+				justify-content: center;
+				flex-direction: column;
+				align-items: flex-start;
+				line-height: 33px;
+			}
+		}
+	}
+}

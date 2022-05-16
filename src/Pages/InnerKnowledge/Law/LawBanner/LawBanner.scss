@@ -1,0 +1,32 @@
+.LawBanner {
+	width: 100%;
+	background-image: linear-gradient(to right, #111328, #01426e, #19b8a8);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 250px;
+	margin-top: 109px;
+	position: relative;
+
+	.mmt-white-blur {
+		background-image: url(../../../../Assets/Images/BlockChain/block-banner-02.svg);
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		z-index: 1;
+		.mmt-white-cont {
+			z-index: 2;
+		}
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.LawBanner {
+		height: auto;
+		padding: 25px 0px;
+		.mmt-paper-heading {
+			width: 100%;
+			right: 0px;
+		}
+	}
+}

@@ -1,0 +1,25 @@
+.services-component {
+    .generic-card {
+        transition: all .2s ease-out;
+    }
+
+    h3,
+    p {
+        transition: all .2s ease-out;
+    }
+
+    .generic-card:hover {
+        background-color: rgb(25, 184, 168);
+
+        h3,
+        p {
+            color: #fff !important;
+        }
+
+        button {
+            background-color: #fff !important;
+            color: #212121 !important;
+        }
+    }
+}
+

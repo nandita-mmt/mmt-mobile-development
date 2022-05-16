@@ -1,0 +1,90 @@
+.DigitalAccelerationCards {
+	width: 100%;
+	height: auto;
+	.mmt-papercard-container {
+		.mmt-form-div {
+			box-shadow: 0px 5px 20px #0000001c;
+		}
+		.mmt-test-curve {
+			position: absolute;
+			margin: auto;
+			left: 0;
+			right: 0;
+		}
+	}
+	.mmt-company {
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		width: 40%;
+	}
+	.mmt-right-txt {
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	.mmt-company {
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		width: 40%;
+	}
+	.mmt-body-background {
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-image: url(../../../Assets/Images/Common/body-background.svg);
+	}
+	.mmt-DigitalAcceleration-crd {
+		min-height: 295px;
+		height: 350px;
+		border-radius: 10px;
+		box-shadow: 0px 25px 50px #00000029;
+	}
+	.mmt-block-bottom {
+		width: 100%;
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+	.mmt-acceleration-title {
+		min-height: 60px;
+	}
+}
+
+@media only screen and (max-width: 992px) {
+	.DigitalAccelerationCards {
+		width: 100%;
+		height: auto;
+		.mmt-papercard-container {
+			.mmt-test-curve {
+				position: absolute;
+				margin: auto;
+				left: 0;
+				right: 0;
+			}
+		}
+		.mmt-DigitalAcceleration-crd {
+			height: auto;
+			border-radius: 10px;
+			box-shadow: 0px 25px 50px #00000029;
+		}
+	}
+}
+
+
+@media only screen and (max-width: 576px) {
+	.DigitalAccelerationCards {
+		.popover{
+			min-width: 350px !important;
+		}
+	}
+}
+
+@media only screen and (max-width: 360px) {
+	.DigitalAccelerationCards {
+		.popover{
+			min-width: 300px !important;
+		}
+	}
+}
