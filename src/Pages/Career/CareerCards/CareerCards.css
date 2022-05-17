@@ -1,0 +1,70 @@
+.CareerCards {
+  width: 100%;
+  height: auto;
+  margin-top: 100px;
+}
+
+.CareerCards .mmt-papercard-container .mmt-card-holder {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 3.3rem;
+  -ms-grid-columns: (minmax(17rem, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
+}
+
+.CareerCards .mmt-papercard-container .mmt-test-curve {
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+}
+
+.CareerCards .mmt-job-type {
+  border-radius: 20px;
+  border: 1px solid #e95223;
+  background: #fdf1e9;
+  width: 80px;
+}
+
+.CareerCards .mmt-job-type p {
+  color: #e95223;
+}
+
+.CareerCards .mmt-img-crd {
+  height: 150px;
+}
+
+.CareerCards .mmt-img-crd .mmt-company {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.CareerCards .mmt-scope-crd {
+  height: 450px;
+  -webkit-box-shadow: 0px 20px 30px #00000029;
+          box-shadow: 0px 20px 30px #00000029;
+}
+
+.CareerCards .hover_career {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.CareerCards .hover_career:hover {
+  -webkit-box-shadow: 0px 3px 20px #00000029;
+          box-shadow: 0px 3px 20px #00000029;
+}
+
+.CareerCards .file-input-width {
+  width: 100%;
+}
+
+@media only screen and (max-width: 430px) {
+  .CareerCards {
+    margin-top: 150px;
+  }
+}
+/*# sourceMappingURL=CareerCards.css.map */

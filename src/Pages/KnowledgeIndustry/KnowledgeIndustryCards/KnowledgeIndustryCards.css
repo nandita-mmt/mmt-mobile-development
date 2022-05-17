@@ -1,0 +1,144 @@
+.KnowledgeIndustryCards {
+  width: 100%;
+  height: auto;
+}
+
+.KnowledgeIndustryCards .mmt-papercard-container .mmt-test-curve {
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+}
+
+.KnowledgeIndustryCards .mmt-papercard-container .mmt-card-holder {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 3.3rem;
+  -ms-grid-columns: (minmax(17rem, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
+}
+
+.KnowledgeIndustryCards .img-text {
+  position: absolute;
+  top: -70px;
+  font-family: 'Poppins', sans-serif;
+  margin: 0px;
+  font: bold 380px sans;
+  background-size: 100% 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+.KnowledgeIndustryCards .mmt-knowledge-individual {
+  height: 350px;
+}
+
+.KnowledgeIndustryCards .mmt-about-service {
+  border-top: 1px solid #c9c9d2;
+  border-bottom: 1px solid #c9c9d2;
+}
+
+.KnowledgeIndustryCards .mmt-about-service-in {
+  border-right: 1px solid #c9c9d2;
+}
+
+.KnowledgeIndustryCards .mmt-co-founder {
+  margin-top: 100px;
+}
+
+.KnowledgeIndustryCards .mmt-co-founder .mmt-co-founder-img {
+  height: 520px;
+  width: 60%;
+  background-image: url(../../../Assets/Images/AboutUs//about-main.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.KnowledgeIndustryCards .mmt-co-founder .mmt-co-founder-detail {
+  height: 500px;
+  width: 50%;
+  position: absolute;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 3px 20px #00000012;
+          box-shadow: 0px 3px 20px #00000012;
+  right: 0px;
+  bottom: -50px;
+  padding: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  line-height: 33px;
+}
+
+.KnowledgeIndustryCards .mmt-post {
+  margin-top: 100px;
+}
+
+.KnowledgeIndustryCards .mmt-post .mmt-post-img {
+  height: 400px;
+  width: 80%;
+  background-image: url(../../../Assets/Images/Teams/dummy-image.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.KnowledgeIndustryCards .mmt-post .mmt-post-detail {
+  height: 120px;
+  width: 50%;
+  position: absolute;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 3px 20px #00000012;
+          box-shadow: 0px 3px 20px #00000012;
+  right: 0px;
+  bottom: -50px;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  line-height: 33px;
+}
+
+.KnowledgeIndustryCards .mmt-web-practice-key {
+  height: 450px;
+}
+
+@media only screen and (max-width: 767px) {
+  .KnowledgeIndustryCards .mmt-about-service-in {
+    border-right: none;
+  }
+  .KnowledgeIndustryCards .mmt-web-practice-key {
+    height: auto;
+  }
+  .KnowledgeIndustryCards .mmt-knowledge-individual {
+    height: auto;
+  }
+  .KnowledgeIndustryCards .img-text {
+    position: relative;
+    top: 0px;
+  }
+}
+/*# sourceMappingURL=KnowledgeIndustryCards.css.map */

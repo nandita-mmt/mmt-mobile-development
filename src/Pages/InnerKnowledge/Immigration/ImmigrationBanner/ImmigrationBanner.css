@@ -1,0 +1,35 @@
+.ImmigrationBanner {
+  width: 100%;
+  background-image: -webkit-gradient(linear, left top, right top, from(#111328), color-stop(#01426e), to(#19b8a8));
+  background-image: linear-gradient(to right, #111328, #01426e, #19b8a8);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 250px;
+  margin-top: 109px;
+  position: relative;
+}
+
+.ImmigrationBanner .mmt-white-blur {
+  background-image: url(../../../../Assets/Images/BlockChain/block-banner-02.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1;
+}
+
+.ImmigrationBanner .mmt-white-blur .mmt-white-cont {
+  z-index: 2;
+}
+
+@media only screen and (max-width: 767px) {
+  .ImmigrationBanner {
+    height: auto;
+    padding: 25px 0px;
+  }
+  .ImmigrationBanner .mmt-paper-heading {
+    width: 100%;
+    right: 0px;
+  }
+}
+/*# sourceMappingURL=ImmigrationBanner.css.map */

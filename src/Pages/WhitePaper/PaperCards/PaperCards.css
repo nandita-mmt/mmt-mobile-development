@@ -1,0 +1,66 @@
+.PaperCards {
+  width: 100%;
+  height: auto;
+}
+
+.PaperCards .mmt-papercard-container .mmt-card-holder {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 3.3rem;
+  -ms-grid-columns: (minmax(17rem, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
+}
+
+.PaperCards .mmt-papercard-container .mmt-download-btn {
+  background-color: #482080;
+  border-radius: 35%;
+  height: 50px;
+  width: 50px;
+  border: none;
+  position: absolute;
+  top: -70px;
+  right: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.PaperCards .mmt-whitepaper-img {
+  height: 275px;
+}
+
+.PaperCards .whitepaper-crd {
+  height: 580px;
+}
+
+.PaperCards .mmt-crd-body .fixedToBottom {
+  position: absolute;
+  bottom: 25px;
+}
+
+.PaperCards .mmt-crd-body .mmt-crd-title a {
+  color: #000000 !important;
+}
+
+.PaperCards .mmt-crd-body:hover .mmt-crd-title a {
+  color: #19b8a8 !important;
+}
+
+@media only screen and (max-width: 576px) {
+  .PaperCards .whitepaper-crd {
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 391px) {
+  .PaperCards {
+    margin-top: 100px;
+  }
+}
+/*# sourceMappingURL=PaperCards.css.map */

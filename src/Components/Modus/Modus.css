@@ -1,0 +1,62 @@
+.Modus .mmt-modus-pink {
+  background: #fff7e3;
+  height: auto;
+  float: left;
+}
+
+.Modus .mmt-pink-img {
+  position: absolute;
+  right: 0;
+  bottom: -110px;
+}
+
+.Modus .mmt-trust-img {
+  display: block;
+}
+
+.Modus .mmt-modus-green {
+  background: #e3fff8;
+  height: auto;
+  float: right;
+}
+
+.Modus .mmt-green-img {
+  position: absolute;
+  right: 0;
+  bottom: -110px;
+}
+
+.Modus .mmt-modus-bottom-resp {
+  margin-top: 0px;
+}
+
+@media only screen and (max-width: 991px) {
+  .Modus .mmt-trust-img {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .Modus {
+    margin-top: 50px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .Modus {
+    margin-top: 100px;
+  }
+  .Modus .mmt-modus-bottom-resp {
+    margin-top: 50px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .Modus .mmt-pink-img {
+    bottom: -127px;
+  }
+  .Modus .mmt-green-img {
+    bottom: -134px;
+  }
+}
+/*# sourceMappingURL=Modus.css.map */

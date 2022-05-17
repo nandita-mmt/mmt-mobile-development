@@ -1,0 +1,75 @@
+.AboutUsBanner {
+  width: 100%;
+  background-image: url(../../../Assets/Images/AboutUs/about-bnr.webp);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: auto;
+  margin-top: 120px;
+  position: relative;
+}
+
+.AboutUsBanner .mmt-paper-heading {
+  width: 200px;
+  background: #000000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 10px;
+  float: right;
+}
+
+.AboutUsBanner .mmt-client-count {
+  width: 100%;
+  margin: 5px 0px;
+  height: 110px;
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.AboutUsBanner .mmt-about-bnr-blur {
+  background-image: -webkit-gradient(linear, left top, right top, from(#111328), color-stop(#01426e), to(#19b8a8));
+  background-image: linear-gradient(to right, #111328, #01426e, #19b8a8);
+  opacity: 0.9;
+  height: 100%;
+}
+
+@media only screen and (max-width: 992px) {
+  .AboutUsBanner .mmt-paper-heading {
+    width: 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .AboutUsBanner .mmt-client-count {
+    margin: 0px 5px;
+  }
+}
+/*# sourceMappingURL=AboutUsBanner.css.map */

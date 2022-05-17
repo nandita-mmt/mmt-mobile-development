@@ -1,0 +1,301 @@
+/* 
+ * MAIN 
+ */
+.default-page-main {
+  width: 100%;
+  height: auto;
+}
+
+.default-page-main .mmt-papercard-container .mmt-test-curve {
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+}
+
+.default-page-main .mmt-papercard-container .mmt-card-holder {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 3.3rem;
+  -ms-grid-columns: (minmax(17rem, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
+}
+
+.default-page-main .man {
+  margin-top: -71px;
+  margin-left: 200px;
+}
+
+.default-page-main .test {
+  width: 30%;
+}
+
+.default-page-main .mmt-car-content {
+  height: 510px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.default-page-main .owl-carousel .mmt-about-service-in {
+  border: 1px solid #c9c9d2;
+}
+
+.default-page-main .mmt-co-founder {
+  margin-top: 100px;
+}
+
+.default-page-main .mmt-co-founder .mmt-co-founder-img {
+  height: 520px;
+  width: 60%;
+  background-image: url(../../Assets/Images/AboutUs//about-main.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.default-page-main .mmt-co-founder .mmt-co-founder-detail {
+  height: 500px;
+  width: 50%;
+  position: absolute;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 3px 20px #00000012;
+          box-shadow: 0px 3px 20px #00000012;
+  right: 0px;
+  bottom: -50px;
+  padding: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  line-height: 33px;
+}
+
+.default-page-main .mmt-post {
+  margin-top: 100px;
+}
+
+.default-page-main .mmt-post .mmt-post-img {
+  height: 400px;
+  width: 80%;
+  background-image: url(../../Assets/Images/Teams/dummy-image.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.default-page-main .mmt-post .mmt-post-detail {
+  height: 120px;
+  width: 50%;
+  position: absolute;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 3px 20px #00000012;
+          box-shadow: 0px 3px 20px #00000012;
+  right: 0px;
+  bottom: -50px;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  line-height: 33px;
+}
+
+.default-page-main .mmt-web-resp-txt {
+  font-size: 60px;
+}
+
+.default-page-main .mmt-web-practice-key {
+  height: 450px;
+}
+
+@media only screen and (max-width: 767px) {
+  .default-page-main .mmt-about-service-in {
+    border-right: none;
+  }
+  .default-page-main .mmt-web-practice-key {
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .default-page-main .mmt-web-resp-txt {
+    font-size: 45px;
+  }
+}
+
+/* 
+ * OVERALL STYLING 
+ */
+@media screen and (max-width: 991px) {
+  .default-page-template .cust-margin-0 {
+    margin: 0 !important;
+  }
+  .default-page-template .cust-pt-0 {
+    padding-top: 0 !important;
+  }
+  .default-page-template .small-screen-vspacer {
+    height: 20px;
+  }
+  .default-page-template h1 {
+    font-size: 32px !important;
+    text-align: center;
+  }
+  .default-page-template .mmt-about-service {
+    padding: 0 !important;
+    margin-bottom: 0 !important;
+  }
+  .default-page-template .mmt-about-service .remove-padding {
+    padding: 0 !important;
+  }
+  .default-page-template .mmt-papercard-container .remove-padding {
+    padding-bottom: 0 !important;
+  }
+  .default-page-template .card-fill-bottom-wrapper.cust-pt-0 {
+    padding-top: 0 !important;
+  }
+  .default-page-template .card-fill-bottom-wrapper .stack-order {
+    display: block;
+  }
+  .default-page-template .card-fill-bottom-wrapper .align-items-start {
+    margin: 0 !important;
+  }
+  .default-page-template .card-fill-bottom-wrapper .card-ends {
+    margin-bottom: 32px !important;
+  }
+  .default-page-template .card-fill-bottom-wrapper .end-cta {
+    padding-bottom: 0 !important;
+  }
+  .default-page-template #carousel-parent {
+    padding-top: 3rem !important;
+    padding-bottom: 55px !important;
+    overflow: hidden;
+  }
+  .default-page-template #carousel-parent .owl-nav button {
+    -webkit-transition: all .2s ease-out !important;
+    transition: all .2s ease-out !important;
+  }
+  .default-page-template #carousel-parent .owl-nav button:hover {
+    background-color: rgba(0, 12, 30, 0.35) !important;
+  }
+  .default-page-template #carousel-parent.hover-green .owl-nav button:hover {
+    background-color: rgba(25, 184, 168, 0.35) !important;
+  }
+  .default-page-template .owl-carousel {
+    padding: 0 !important;
+  }
+  .default-page-template .owl-carousel .owl-stage .owl-item .mmt-car-content {
+    -webkit-box-shadow: 0 14px 28px rgba(0, 12, 30, 0.35), 0 10px 10px rgba(0, 12, 30, 0.32);
+            box-shadow: 0 14px 28px rgba(0, 12, 30, 0.35), 0 10px 10px rgba(0, 12, 30, 0.32);
+  }
+  .default-page-template .owl-carousel .owl-stage .owl-item .mmt-car-content.green {
+    -webkit-box-shadow: 0 14px 28px rgba(25, 184, 168, 0.35), 0 10px 10px rgba(25, 184, 168, 0.32);
+            box-shadow: 0 14px 28px rgba(25, 184, 168, 0.35), 0 10px 10px rgba(25, 184, 168, 0.32);
+  }
+  .default-page-template .owl-carousel .mmt-car-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 250px !important;
+    padding: 32px 24px !important;
+    margin: 30px 30px 40px;
+    border: 0 !important;
+    border-radius: 10px !important;
+  }
+  .default-page-template .owl-carousel .mmt-car-content h3 {
+    margin: 0 !important;
+  }
+  .default-page-template .owl-carousel .mmt-car-content p {
+    margin-top: .7rem !important;
+    margin-bottom: 0 !important;
+  }
+  .default-page-template .owl-carousel .owl-nav button {
+    margin-top: 0 !important;
+  }
+  .default-page-template .mmt-papercard-container {
+    padding: 32px 16px 0 !important;
+    margin-top: 0 !important;
+  }
+  .default-page-template .mmt-papercard-container .card-fill {
+    clear: both;
+    padding: 32px 16px !important;
+    margin: 0 !important;
+    text-align: center;
+    background-color: #000c1e;
+    color: #fff;
+    border-radius: 12px !important;
+  }
+  .default-page-template .mmt-papercard-container .card-fill + .card-fill {
+    margin-top: 24px !important;
+  }
+  .default-page-template .mmt-papercard-container .card-fill.backdrop-green {
+    background-color: #19b8a8 !important;
+    color: #000;
+  }
+  .default-page-template .mmt-papercard-container .card-fill.backdrop-green a.customNavLink button {
+    background-color: #000c1e !important;
+  }
+  .default-page-template .mmt-papercard-container .card-fill h2 {
+    padding: 0 10px;
+    font-size: 24px !important;
+    font-weight: 700 !important;
+  }
+  .default-page-template .mmt-papercard-container .card-fill p {
+    text-align: center !important;
+  }
+  .default-page-template .mmt-papercard-container .card-fill .card-fill-list p {
+    text-align: left !important;
+  }
+  .default-page-template .mmt-papercard-container .card-fill a.customNavLink {
+    display: inline-block;
+    padding-top: 1rem;
+    text-align: center;
+  }
+  .default-page-template .mmt-papercard-container .card-fill a.customNavLink button {
+    border-radius: .3rem;
+    -webkit-transition: all .2s ease-out !important;
+    transition: all .2s ease-out !important;
+  }
+  .default-page-template .mmt-papercard-container .card-fill a.customNavLink:hover button {
+    border-radius: 2rem;
+  }
+  .default-page-template .ss-remove-pt {
+    padding-top: 0 !important;
+  }
+  .default-page-template .ss-remove-mb {
+    margin-bottom: 0 !important;
+  }
+}
+/*# sourceMappingURL=AboutUs.css.map */

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,oBAAoB,CAAC;EACpB,QAAQ,EAAE,MAAM;CAChB",
+    "sources": [
+        "DigitalAcceleration.scss"
+    ],
+    "names": [],
+    "file": "DigitalAcceleration.css"
+}

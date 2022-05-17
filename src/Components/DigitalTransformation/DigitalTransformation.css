@@ -1,0 +1,84 @@
+.empowering-digital {
+  background-color: #fff;
+  position: relative;
+  z-index: 0;
+}
+
+.empowering-digital:after {
+  content: '';
+  position: absolute;
+  width: 141px;
+  height: 136px;
+  background: url(../../Assets/Images/Home/section-2-round-object.jpg) no-repeat;
+  right: 10px;
+  bottom: 0px;
+  background-size: 80% auto;
+  z-index: -1;
+}
+
+.empowering-digital-leftdiv {
+  background-color: #f6f6f6;
+  margin: 3rem 0;
+  border: none;
+  border-radius: 0 8px 8px 0;
+  padding: 3rem;
+}
+
+.empowering-digital-leftdiv-inner {
+  width: 90%;
+}
+
+.empowering-digital-leftdiv-inner > h2 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: #000;
+  font-weight: 300;
+}
+
+.empowering-digital-leftdiv-inner > h2 > strong {
+  color: #19b2a3;
+  font-weight: 700;
+}
+
+.begin-the-magic-button {
+  height: 50px;
+  width: 210px;
+  background-color: #2a8280;
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-decoration: none;
+}
+
+.empowering-digital-rightdiv {
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #144f57;
+  margin: 3rem;
+  margin-top: 0;
+  margin-right: 0rem;
+  margin-bottom: 0rem;
+}
+
+.empowering-digital-rightdiv p {
+  width: 90%;
+}
+
+.emp-dgt-rightdiv-heading {
+  font-size: 25px;
+  line-height: 35px;
+  color: #144f57;
+  font-weight: 500;
+}
+/*# sourceMappingURL=DigitalTransformation.css.map */

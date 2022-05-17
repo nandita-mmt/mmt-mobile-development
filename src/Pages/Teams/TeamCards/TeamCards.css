@@ -1,0 +1,157 @@
+.TeamCards {
+  width: 100%;
+  height: auto;
+  margin-top: 100px;
+}
+
+.TeamCards .mmt-papercard-container .mmt-test-curve {
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+}
+
+.TeamCards .mmt-papercard-container .mmt-card-holder {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 3.3rem;
+  -ms-grid-columns: (minmax(17rem, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
+}
+
+.TeamCards .mmt-co-founder .mmt-co-founder-img {
+  height: 825px;
+  width: 80%;
+  background-image: url(../../../Assets/Images/Teams/ceo.JPG);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.TeamCards .mmt-co-founder .mmt-co-founder-detail {
+  height: 570px;
+  width: 50%;
+  position: absolute;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 3px 20px #00000012;
+          box-shadow: 0px 3px 20px #00000012;
+  right: 0px;
+  bottom: -50px;
+  padding: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  line-height: 33px;
+}
+
+.TeamCards .mmt-post {
+  height: 280px;
+}
+
+.TeamCards .mmt-post .mmt-post-img img {
+  height: 230px;
+  width: 66%;
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-box-shadow: 0px 3px 20px #00000012;
+          box-shadow: 0px 3px 20px #00000012;
+}
+
+.TeamCards .mmt-post .mmt-post-detail {
+  height: 80px;
+  width: 80%;
+  position: absolute;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 3px 20px #00000012;
+          box-shadow: 0px 3px 20px #00000012;
+  right: 0px;
+  bottom: 0px;
+  padding: 10px 20px;
+}
+
+@media only screen and (max-width: 1199px) {
+  .TeamCards .mmt-co-founder .mmt-co-founder-img {
+    height: 700px;
+  }
+  .TeamCards .mmt-co-founder .mmt-co-founder-detail {
+    height: 730px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .TeamCards .mmt-co-founder .mmt-co-founder-img {
+    height: 650px;
+  }
+  .TeamCards .mmt-co-founder .mmt-co-founder-detail {
+    height: 630px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .TeamCards .mmt-co-founder .mmt-co-founder-img {
+    width: 100%;
+    height: 500px;
+  }
+  .TeamCards .mmt-co-founder .mmt-co-founder-detail {
+    position: relative;
+    width: 100%;
+    height: 450px;
+    line-height: 33px;
+  }
+  .TeamCards .mmt-post {
+    padding-left: 25%;
+  }
+  .TeamCards .mmt-post .mmt-post-detail {
+    width: 50% !important;
+  }
+  .TeamCards .mmt-about-service-in {
+    border-right: none;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .TeamCards .mmt-papercard-container .mmt-resp-font-xl {
+    font-size: 40px;
+  }
+  .TeamCards .mmt-co-founder .mmt-co-founder-img {
+    height: 500px;
+    width: 100%;
+  }
+  .TeamCards .mmt-co-founder .mmt-co-founder-detail {
+    height: 480px;
+    width: 100%;
+    position: relative;
+    background: #ffffff;
+    -webkit-box-shadow: 0px 3px 20px #00000012;
+            box-shadow: 0px 3px 20px #00000012;
+    right: 0px;
+    bottom: -50px;
+    padding: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    line-height: 33px;
+  }
+}
+/*# sourceMappingURL=TeamCards.css.map */

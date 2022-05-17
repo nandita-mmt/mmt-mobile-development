@@ -1,0 +1,64 @@
+.FooterAccordian {
+  padding: 0px !important;
+}
+
+.FooterAccordian .mmt-footer-flag {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #ffffff;
+}
+
+.FooterAccordian .bg-trans {
+  background: transparent !important;
+}
+
+.FooterAccordian .mmt-mobile-footer-ind {
+  background-image: url(../../Assets/Images/Footer/f4.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.FooterAccordian .mmt-mobile-footer-ind .mmt-blur-div {
+  background: rgba(0, 0, 0, 0.7);
+  height: 100%;
+  width: 100%;
+  position: relative;
+  padding: 20px;
+}
+
+.FooterAccordian .mmt-mobile-footer-ind .mmt-hover-top {
+  width: 60px;
+  height: 8px;
+  border-radius: 10px;
+  background: #19b8a8;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+.FooterAccordian .accordion__button {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  position: relative;
+  color: #ffffff !important;
+  background: #12131c !important;
+  border-top: 1px solid #707070;
+}
+
+.FooterAccordian .accordion__button:last-child {
+  border-bottom: 2px solid #707070;
+}
+
+.FooterAccordian .accordion__button::before {
+  position: absolute;
+  right: 20px;
+  top: 25px;
+}
+
+.FooterAccordian .accordion__panel {
+  padding: 0px !important;
+}
+/*# sourceMappingURL=FooterAccordian.css.map */

@@ -1,0 +1,161 @@
+.AboutUsCards {
+  width: 100%;
+  height: auto;
+}
+
+.AboutUsCards .mmt-papercard-container .mmt-resp-font-xl {
+  font-size: 60px;
+}
+
+.AboutUsCards .mmt-papercard-container .mmt-test-curve {
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+}
+
+.AboutUsCards .mmt-papercard-container .mmt-card-holder {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 3.3rem;
+  -ms-grid-columns: (minmax(17rem, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
+}
+
+.AboutUsCards .owl-carousel .mmt-about-service-in {
+  border: 1px solid #c9c9d2;
+}
+
+.AboutUsCards .mmt-car-content {
+  height: 510px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.AboutUsCards .mmt-co-founder {
+  margin-top: 50px;
+}
+
+.AboutUsCards .mmt-co-founder .mmt-co-founder-img {
+  height: 520px;
+  width: 60%;
+  background-image: url(../../../Assets/Images/AboutUs//about-main.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.AboutUsCards .mmt-co-founder .mmt-co-founder-detail {
+  height: 500px;
+  width: 50%;
+  position: absolute;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 3px 20px #00000012;
+          box-shadow: 0px 3px 20px #00000012;
+  right: 0px;
+  bottom: -50px;
+  padding: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  line-height: 33px;
+}
+
+.AboutUsCards .mmt-post {
+  margin-top: 100px;
+}
+
+.AboutUsCards .mmt-post .mmt-post-img {
+  height: 400px;
+  width: 80%;
+  background-image: url(../../../Assets/Images/Teams/dummy-image.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.AboutUsCards .mmt-post .mmt-post-detail {
+  height: 120px;
+  width: 50%;
+  position: absolute;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 3px 20px #00000012;
+          box-shadow: 0px 3px 20px #00000012;
+  right: 0px;
+  bottom: -50px;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  line-height: 33px;
+}
+
+@media only screen and (max-width: 1199px) {
+  .AboutUsCards .mmt-co-founder .mmt-co-founder-img {
+    height: 620px;
+  }
+  .AboutUsCards .mmt-co-founder .mmt-co-founder-detail {
+    height: 600px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .AboutUsCards .mmt-co-founder .mmt-co-founder-detail {
+    padding: 25px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .AboutUsCards .mmt-co-founder .mmt-co-founder-img {
+    width: 100%;
+    height: 700px;
+  }
+  .AboutUsCards .mmt-co-founder .mmt-co-founder-detail {
+    width: 100%;
+    position: relative;
+    height: 480px;
+    padding: 25px;
+    line-height: 26px;
+  }
+  .AboutUsCards .mmt-about-service-in {
+    border-right: none;
+  }
+  .AboutUsCards .mmt-about-service .mmt-about-key {
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .AboutUsCards .mmt-papercard-container .mmt-resp-font-xl {
+    font-size: 40px;
+  }
+}
+/*# sourceMappingURL=AboutUsCards.css.map */

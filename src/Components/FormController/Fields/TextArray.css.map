@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,iBAAiB,CAAC;EACjB,OAAO,EAAE,IAAI;EACb,GAAG,EAAE,GAAG;EACR,aAAa,EAAE,KAAK;EACpB,WAAW,EAAE,MAAM;EACnB,eAAe,EAAE,aAAa;CAC9B",
+    "sources": [
+        "TextArray.scss"
+    ],
+    "names": [],
+    "file": "TextArray.css"
+}

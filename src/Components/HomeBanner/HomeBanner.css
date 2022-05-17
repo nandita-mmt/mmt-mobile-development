@@ -1,0 +1,122 @@
+.top-banner {
+  background: -webkit-gradient(linear, left top, right top, from(#11192e), to(#19b2a3));
+  background: linear-gradient(90deg, #11192e, #19b2a3);
+  color: #fff;
+  position: relative;
+}
+
+.spiner img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  margin: 0 auto;
+  -webkit-transition: 20s;
+  transition: 20s;
+}
+
+.spiner .one {
+  width: 15%;
+  background-size: cover;
+  -webkit-animation: rotate 10s linear infinite;
+          animation: rotate 10s linear infinite;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+}
+
+.spiner .two {
+  width: 25%;
+  background-size: cover;
+  -webkit-animation: rotate 8s alternate infinite;
+          animation: rotate 8s alternate infinite;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.spiner .three {
+  width: 35%;
+  background-size: cover;
+  -webkit-animation: rotate 10s linear infinite;
+          animation: rotate 10s linear infinite;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+}
+
+.spiner .four {
+  width: 45%;
+  background-size: cover;
+  -webkit-animation: rotate 15s alternate infinite;
+          animation: rotate 15s alternate infinite;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+.top-banner-inner {
+  margin: 14% auto;
+  text-align: center;
+}
+
+.banner-heading {
+  font-size: 100px;
+  font-weight: 100;
+}
+
+.banner-heading span {
+  font-weight: 600;
+}
+
+.banner-description {
+  font-weight: 400;
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+
+.contact-our-experts-button {
+  height: 50px;
+  width: 210px;
+  background-color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  color: #167b79;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-decoration: none;
+}
+
+.contact-our-experts-button:hover {
+  text-decoration: none;
+  color: #167b79;
+}
+/*# sourceMappingURL=HomeBanner.css.map */

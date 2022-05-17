@@ -1,0 +1,23 @@
+.WhiteDownloadCards {
+  width: 100%;
+  height: auto;
+}
+
+.WhiteDownloadCards .mmt-papercard-container .mmt-form-div {
+  -webkit-box-shadow: 0px 5px 20px #0000001c;
+          box-shadow: 0px 5px 20px #0000001c;
+}
+
+@media only screen and (max-width: 992px) {
+  .WhiteDownloadCards {
+    width: 100%;
+    height: auto;
+  }
+  .WhiteDownloadCards .mmt-papercard-container .mmt-test-curve {
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+  }
+}
+/*# sourceMappingURL=WhiteDownloadCards.css.map */

@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,700;1,800;1,900&display=swap');
-@import '~bootstrap/scss/bootstrap';
+@import '../../../node_modules/bootstrap/scss/bootstrap.scss';
 .default-page-template {
   .content-wrapper{
     // margin-top: 60px;
@@ -243,43 +243,33 @@ section{
       background-color: $primary_color;
       display: inline-block;
       color: #ffffff;
-      font-size: 15px;
+      font-size: 20px;
       border-radius: 5px;
       padding:5px 10px;
+      max-width: 260px;
     }
     p{
       font-size: 14px;
-      padding:0px 70px;
+      padding:0px 80px;
       font-weight: 500;
     }
   }
   .col-lg-4:nth-child(2){
     position: relative;
-    &:after{
-      content:'';
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      background: url(../../Assets/Images/MobileLanding/arrow-01.png) no-repeat bottom center;
-      background-size: 100% auto;
-      bottom:0px;
-      left:0px;
-      margin:0 auto;
-    }
+    // &:after{
+    //   content:'';
+    //   position: absolute;
+    //   width: 100%;
+    //   height: 100%;
+    //   background: url(../../Assets/Images/MobileLanding/arrow-01.png) no-repeat bottom center;
+    //   background-size: 100% auto;
+    //   bottom:0px;
+    //   left:0px;
+    //   margin:0 auto;
+    // }
   }
   .col-lg-4:nth-child(3){
-    position: relative;
-    &:after{
-      content:'';
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      background: url(../../Assets/Images/MobileLanding/arrow-02.png) no-repeat top center;
-      background-size: 100% auto;
-      top:0px;
-      left:0px;
-      margin:0 auto;
-    }
+    position: relative;    
     .section{
       .icon{
         h3{
@@ -292,18 +282,7 @@ section{
     }
   }
   .col-lg-4:nth-child(4){
-    position: relative;
-    &:after{
-      content:'';
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      background: url(../../Assets/Images/MobileLanding/arrow-03.png) no-repeat bottom center;
-      background-size: 100% auto;
-      bottom:0px;
-      left:0px;
-      margin:0 auto;
-    }
+    position: relative;  
     .section{
       .icon{
         h3{
@@ -315,6 +294,19 @@ section{
       }
     }
   }
+  .col-lg-4:nth-child(5){
+    position: relative;  
+    .section{
+      .icon{
+        h3{
+          color: #2d9132;
+        }
+      }
+      h5{
+        background-color: #2d9132;
+      }
+    }
+  } 
 }
 
 .benefits{
@@ -916,6 +908,10 @@ form .form-group{margin-bottom: 20px;}
 @media only screen and (max-width:1399px){
   .engagement .section{
     padding: 90px 0;
+  }
+  .engagement .section h5{
+    font-size: 15px;
+    max-width: 210px;
   }
 }
 @media only screen and (max-width:1366px){

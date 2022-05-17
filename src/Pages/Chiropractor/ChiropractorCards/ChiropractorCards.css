@@ -1,0 +1,247 @@
+.ChiropractorCards {
+  width: 100%;
+  height: auto;
+}
+
+.ChiropractorCards .mmt-papercard-container .mmt-form-div {
+  -webkit-box-shadow: 0px 5px 20px #0000001c;
+          box-shadow: 0px 5px 20px #0000001c;
+}
+
+.ChiropractorCards .mmt-papercard-container .mmt-test-curve {
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+}
+
+.ChiropractorCards .mmt-right-txt {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.ChiropractorCards .mmt-company {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 40%;
+}
+
+.ChiropractorCards .mmt-blockchain-crd {
+  -webkit-box-shadow: 0px 25px 50px #00000029;
+          box-shadow: 0px 25px 50px #00000029;
+}
+
+.ChiropractorCards .mmt-chiro-player {
+  height: 445px !important;
+  top: 0;
+  -webkit-box-shadow: 0px 30px 60px #0000007a;
+          box-shadow: 0px 30px 60px #0000007a;
+}
+
+.ChiropractorCards .mmt-play-btn {
+  bottom: 50px;
+  right: 50px;
+  z-index: 100;
+  width: 145px;
+  position: absolute;
+  height: 144px;
+  background: transparent !important;
+  border: none !important;
+}
+
+.ChiropractorCards .mmt-red-img {
+  position: absolute;
+  margin: auto;
+  right: 0;
+}
+
+.ChiropractorCards .mmt-chiro-main-cont {
+  background: #191b27;
+  margin-top: 200px;
+  padding-top: 250px;
+  padding-bottom: 70px;
+}
+
+.ChiropractorCards .mmt-block-accord {
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 90%;
+  -webkit-box-shadow: 0px 20px 30px #00000026;
+          box-shadow: 0px 20px 30px #00000026;
+}
+
+.ChiropractorCards .mmt-accord-txt {
+  position: absolute;
+  left: 0px;
+  bottom: -50px;
+  border-radius: 7px;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 3px 20px #00000012;
+          box-shadow: 0px 3px 20px #00000012;
+  height: 35%;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.ChiropractorCards .mmt-img-dv {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #000000;
+}
+
+.ChiropractorCards .mmt-review-dv {
+  height: 80%;
+}
+
+.ChiropractorCards .accordion {
+  border: none !important;
+}
+
+.ChiropractorCards .accordion__button {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  position: relative;
+}
+
+.ChiropractorCards .accordion__button::before {
+  position: absolute;
+  right: 20px;
+  top: 25px;
+}
+
+.ChiropractorCards .mmt-card-chiro-one {
+  width: 33.33%;
+  padding-top: 300px;
+}
+
+.ChiropractorCards .mmt-card-chiro-two {
+  width: 33.33%;
+  padding-top: 50px;
+}
+
+.ChiropractorCards .mmt-card-chiro-three {
+  width: 33.33%;
+}
+
+.ChiropractorCards .mmt-chiro-cont-div {
+  background: #f1a3eb;
+  height: 161px;
+  width: 96%;
+  margin: 7px;
+}
+
+.ChiropractorCards .mmt-banner-spin {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 70%;
+  height: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+  left: 0;
+  right: -400px;
+}
+
+.ChiropractorCards .mmt-banner-spin .mmt-banner-main-path {
+  width: 98%;
+  position: absolute;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.4;
+  -webkit-animation: rotate 7s linear infinite;
+  -webkit-animation-direction: normal;
+}
+
+.ChiropractorCards .mmt-banner-spin .mmt-banner-second-path {
+  width: 70%;
+  position: absolute;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.4;
+  -webkit-animation: rotate 7s linear infinite;
+  -webkit-animation-direction: reverse;
+}
+
+.ChiropractorCards .mmt-banner-spin .mmt-banner-third-path {
+  width: 55%;
+  position: absolute;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.4;
+  -webkit-animation: rotate 7s linear infinite;
+  -webkit-animation-direction: normal;
+}
+
+.ChiropractorCards .mmt-banner-spin .mmt-banner-fourth-path {
+  width: 40%;
+  position: absolute;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.4;
+  -webkit-animation: rotate 7s linear infinite;
+  -webkit-animation-direction: reverse;
+}
+
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .ChiropractorCards {
+    width: 100%;
+    height: auto;
+  }
+  .ChiropractorCards .mmt-papercard-container .mmt-test-curve {
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+  }
+}
+/*# sourceMappingURL=ChiropractorCards.css.map */

@@ -1,0 +1,25 @@
+.services-component .generic-card {
+  -webkit-transition: all .2s ease-out;
+  transition: all .2s ease-out;
+}
+
+.services-component h3,
+.services-component p {
+  -webkit-transition: all .2s ease-out;
+  transition: all .2s ease-out;
+}
+
+.services-component .generic-card:hover {
+  background-color: #19b8a8;
+}
+
+.services-component .generic-card:hover h3,
+.services-component .generic-card:hover p {
+  color: #fff !important;
+}
+
+.services-component .generic-card:hover button {
+  background-color: #fff !important;
+  color: #212121 !important;
+}
+/*# sourceMappingURL=Services.css.map */

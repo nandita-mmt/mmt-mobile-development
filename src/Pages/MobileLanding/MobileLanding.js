@@ -204,7 +204,7 @@ const MobileLanding = () => {
 									enables thriving startups & giant enterprises to solve complex business
 									challenges through mobility solutions.</p>
 								<h4>Build , Market & Grow</h4>
-								<a href="#enquiry" className="btn btns_custom">Hire Consultants</a>
+								{/* <a href="#enquiry" className="btn btns_custom">Hire Consultants</a> */}
 							</div>
 						</div>
 						<div className="col-lg-6 col-md-6 col-sm-12 ddd pt-5">
@@ -305,31 +305,47 @@ const MobileLanding = () => {
 						<div className="col-lg-4 col-md-6 col-sm-10 col-12">
 							<div className="section text-center">
 								<div className="icon">
-									<h3>1</h3>
-									{/* <!-- <img src="images/document-01.png" alt=""/> --> */}
+									<h3>1</h3>									
+								</div>
+								<h5>Discovery</h5>
+								<p>We will help you in creating intuitive UI & UX for your product</p>
+							</div>
+						</div>
+						<div className="col-lg-4 col-md-6 col-sm-10 col-12">
+							<div className="section text-center">
+								<div className="icon">
+									<h3>2</h3>									
 								</div>
 								<h5>Documentation Phase</h5>
-								<p>We identify loopholes & perform a in-depth analysis of the requirement</p>
+								<p>We will help you to analyse the gap and perform a granular analysis 
+of the requirement</p>
 							</div>
 						</div>
 						<div className="col-lg-4 col-md-6 col-sm-10 col-12">
 							<div className="section text-center">
 								<div className="icon">
-									<h3>2</h3>
-									{/* <!-- <img src="images/ui-ux-icon.png" alt=""/> --> */}
+									<h3>3</h3>									
 								</div>
 								<h5>UI & UX Consulting</h5>
-								<p>We help you in creating intuitive UI & UX for your product</p>
+								<p>We will design, develop & deploy your product in this model</p>
 							</div>
 						</div>
 						<div className="col-lg-4 col-md-6 col-sm-10 col-12">
 							<div className="section text-center">
 								<div className="icon">
-									<h3>3</h3>
-									{/* <!-- <img src="images/development-icon.png" alt=""/> --> */}
+									<h3>4</h3>									
 								</div>
 								<h5>Development & Deployment</h5>
 								<p>We design, develop & deploy your product in this model</p>
+							</div>
+						</div>
+						<div className="col-lg-4 col-md-6 col-sm-10 col-12">
+							<div className="section text-center">
+								<div className="icon">
+									<h3>5</h3>									
+								</div>
+								<h5>Quality Management System</h5>
+								<p>We will help you in creating intuitive UI & UX for your product</p>
 							</div>
 						</div>
 					</div>

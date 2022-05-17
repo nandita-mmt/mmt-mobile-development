@@ -1,0 +1,255 @@
+.Loader {
+  background-image: -webkit-gradient(linear, left top, right top, from(#111328), color-stop(#01426e), to(#19b8a8));
+  background-image: linear-gradient(to right, #111328, #01426e, #19b8a8);
+  width: 100vw;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.Loader .mmt-loader-container {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Loader .mmt-loader-container .mmt-loader-image {
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.Loader .mmt-loader-container .mmt-loader-image .mmt-logo {
+  width: 175px;
+  height: 214px;
+  position: relative;
+}
+
+.Loader .mmt-loader-container .mmt-loader-image .mmt-loader-txt-one {
+  color: #d6d6d6;
+}
+
+.Loader .mmt-loader-container .mmt-loader-image .mmt-loader-txt-two {
+  color: #d6d6d6;
+}
+
+.Loader svg {
+  text-align: center;
+  margin: 0 auto;
+  mask-image: url(../../Assets/Images/Loader/svg-carve.svg), url(../../Assets/Images/Loader/svg-carve2.svg);
+  -webkit-mask-image: url(../../Assets/Images/Loader/svg-carve.svg), url(../../Assets/Images/Loader/svg-carve2.svg);
+  mask-position: center;
+  -webkit-mask-position: 0px 160px, 0px 160px;
+  mask-size: 100%;
+  -webkit-mask-size: 100%, 150%;
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-animation: fill 4s linear;
+          animation: fill 4s linear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.mmt-loader-arrow {
+  top: 20%;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 30%;
+}
+
+.mmt-loader-moon {
+  top: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 18px;
+}
+
+.mmt-loader-left-moon {
+  top: 20%;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  opacity: 0.3;
+  left: 8%;
+}
+
+.mmt-loader-hash {
+  bottom: 4%;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 10%;
+}
+
+.mmt-main-path {
+  width: 98%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  opacity: 0.4;
+  -webkit-animation: rotate 7s linear infinite;
+  -webkit-animation-direction: normal;
+}
+
+.mmt-second-path {
+  width: 70%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  opacity: 0.4;
+  -webkit-animation: rotate 7s linear infinite;
+  -webkit-animation-direction: reverse;
+}
+
+.mmt-third-path {
+  width: 55%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  opacity: 40%;
+  -webkit-animation: rotate 7s linear infinite;
+  -webkit-animation-direction: normal;
+}
+
+.mmt-fourth-path {
+  width: 40%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  opacity: 0.4;
+  -webkit-animation: rotate 7s linear infinite;
+  -webkit-animation-direction: reverse;
+}
+
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+.bg-logo {
+  position: absolute;
+  max-width: 100%;
+}
+
+@-webkit-keyframes fill {
+  0% {
+    -webkit-mask-position: 0px 160px, 0px 160px;
+    mask-position: 0px 160px, 0px 160px;
+  }
+  100% {
+    -webkit-mask-position: 0px -69px, 0px -160px;
+    mask-position: 0px -69px, 0px -160px;
+  }
+}
+
+@keyframes fill {
+  0% {
+    -webkit-mask-position: 0px 160px, 0px 160px;
+    mask-position: 0px 160px, 0px 160px;
+  }
+  100% {
+    -webkit-mask-position: 0px -69px, 0px -160px;
+    mask-position: 0px -69px, 0px -160px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .Loader .mmt-loader-container .mmt-loader-image {
+    width: 100%;
+  }
+  .Loader .mmt-loader-container .mmt-loader-left-moon {
+    top: 33%;
+  }
+  .Loader .mmt-loader-container .mmt-loader-arrow {
+    top: 24%;
+    right: 31%;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .Loader .mmt-loader-container .mmt-loader-image {
+    width: 100%;
+  }
+  .Loader .mmt-loader-container .mmt-loader-left-moon {
+    top: 27%;
+  }
+  .Loader .mmt-loader-container .mmt-loader-arrow {
+    top: 20%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .Loader .mmt-loader-container .mmt-loader-image {
+    width: 100%;
+  }
+  .Loader .mmt-loader-container .mmt-loader-left-moon {
+    top: 27%;
+  }
+  .Loader .mmt-loader-container .mmt-loader-arrow {
+    top: 20%;
+  }
+}
+
+@media only screen and (max-width: 1900px) {
+  .Loader .mmt-loader-hash {
+    left: 21%;
+  }
+}
+
+@media only screen and (max-width: 1600px) {
+  .Loader .mmt-loader-hash {
+    left: 15%;
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  .Loader .mmt-loader-hash {
+    left: 10%;
+  }
+}
+/*# sourceMappingURL=Loader.css.map */

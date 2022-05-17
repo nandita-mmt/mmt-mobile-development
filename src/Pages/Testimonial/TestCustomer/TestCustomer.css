@@ -1,0 +1,51 @@
+.TestCustomer {
+  background-color: #f5f8fc;
+}
+
+.TestCustomer .mmt-test-vid-div {
+  margin-top: 70px;
+  height: 543px;
+}
+
+.TestCustomer .mmt-test-vid-div .mmt-test-img {
+  width: 100%;
+}
+
+.TestCustomer .mmt-test-vid-div .mmt-react-player {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 2px;
+  right: 0px;
+  margin: auto;
+  width: 68%;
+  height: 85%;
+}
+
+@media only screen and (max-width: 767px) {
+  .TestCustomer .mmt-test-vid-div {
+    height: 400px;
+    margin-top: 60px !important;
+  }
+  .TestCustomer .mmt-test-vid-div .mmt-vid-curve {
+    top: -48px;
+  }
+  .TestCustomer .mmt-test-vid-div .mmt-react-player {
+    width: 100%;
+    height: 100%;
+  }
+  .TestCustomer .mmt-test-vid-div .mmt-text-img {
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .TestCustomer .mmt-test-vid-div {
+    height: 300px !important;
+  }
+  .TestCustomer .mmt-test-vid-div .mmt-react-player {
+    width: 100%;
+    height: 100%;
+  }
+}
+/*# sourceMappingURL=TestCustomer.css.map */

@@ -1,0 +1,232 @@
+.HealthCareCards {
+  width: 100%;
+  height: auto;
+}
+
+.HealthCareCards .mmt-custom-top {
+  margin-top: 0px;
+}
+
+.HealthCareCards .mmt-papercard-container .mmt-test-curve {
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+}
+
+.HealthCareCards .mmt-papercard-container .mmt-card-holder {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 3.3rem;
+  -ms-grid-columns: (minmax(17rem, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
+}
+
+.HealthCareCards .owl-carousel .mmt-about-service-in {
+  border: 1px solid #c9c9d2;
+}
+
+.HealthCareCards .mmt-knowledge-row .mmt-know-txt-wd {
+  width: 75%;
+}
+
+.HealthCareCards .mmt-knowledge-row .mmt-project-name-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.HealthCareCards .mmt-knowledge-row .mmt-project-name-div .mmt-project-name-img {
+  width: 40%;
+}
+
+.HealthCareCards .mmt-knowledge-row .mmt-project-name-div .mmt-project-name-img .img-text {
+  font-weight: 900;
+  font-family: 'Poppins', sans-serif;
+  margin: 0px;
+  font: bold 450px sans;
+  text-align: left !important;
+  background-size: 100% 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+.HealthCareCards .mmt-knowledge-row .mmt-project-name-div .mmt-project-name-img .mmt-project-img {
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.HealthCareCards .mmt-know-menu {
+  width: 100%;
+  margin-top: 50px;
+  position: relative;
+}
+
+.HealthCareCards .mmt-know-menu .mmt-subroute-dv {
+  width: 100%;
+  overflow: auto;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.HealthCareCards .mmt-know-menu .mmt-subroute-dv .mmt-know-project {
+  padding-bottom: 20px;
+  min-width: 120px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  background: none !important;
+  color: #5b5b5b;
+}
+
+.HealthCareCards .mmt-know-menu .mmt-subroute-dv .mmt-know-project h3 {
+  font-size: 20px;
+}
+
+.HealthCareCards .mmt-know-menu .mmt-subroute-dv::-webkit-scrollbar {
+  display: none;
+}
+
+.HealthCareCards .mmt-know-menu::-webkit-scrollbar {
+  display: none;
+}
+
+.HealthCareCards .mmt-know-btn span {
+  display: inline-block;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.HealthCareCards .mmt-know-btn span img {
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-timing-function: easy-in;
+          animation-timing-function: easy-in;
+  /*display: none;*/
+}
+
+.HealthCareCards .mmt-know-btn:hover span img {
+  -webkit-animation: slide 0.8s alternate infinite;
+          animation: slide 0.8s alternate infinite;
+}
+
+.HealthCareCards .btn-light:focus {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+.HealthCareCards .nav-item {
+  min-width: 160px;
+  margin: 0px 25px;
+}
+
+.HealthCareCards .nav-item .nav-link {
+  padding: 0px;
+}
+
+.HealthCareCards .nav-link::after {
+  content: '';
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  border-radius: 50px;
+  background: #bababa;
+  bottom: 4px;
+}
+
+.HealthCareCards .nav-pills .nav-link.active,
+.HealthCareCards .nav-pills .show > .nav-link {
+  color: #000000;
+  position: relative;
+}
+
+.HealthCareCards .nav-pills .nav-link.active::before,
+.HealthCareCards .nav-pills .show > .nav-link::before {
+  content: '';
+  position: absolute;
+  height: 8px;
+  width: 100%;
+  border-radius: 100px;
+  background: aqua;
+  bottom: 0px;
+  z-index: 1;
+}
+
+.HealthCareCards .item {
+  height: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.HealthCareCards .item img {
+  height: 40px;
+  width: auto;
+}
+
+.HealthCareCards .mmt-car-content {
+  height: 510px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.HealthCareCards .extra-marg {
+  margin-top: 160px !important;
+}
+
+.HealthCareCards .product-service-header {
+  min-height: 125px;
+}
+
+@media only screen and (max-width: 767px) {
+  .HealthCareCards .mmt-about-service-in {
+    border-right: none;
+  }
+  .HealthCareCards .mmt-know-menu .mmt-subroute-dv {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .HealthCareCards .mmt-custom-top {
+    margin-top: 30px;
+  }
+  .HealthCareCards .mmt-resp-font-xl {
+    font-size: 40px;
+  }
+}
+/*# sourceMappingURL=HealthCareCards.css.map */

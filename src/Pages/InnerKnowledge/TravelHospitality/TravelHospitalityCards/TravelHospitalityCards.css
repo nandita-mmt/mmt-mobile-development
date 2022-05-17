@@ -1,0 +1,232 @@
+.TravelHospitalityCards {
+  width: 100%;
+  height: auto;
+}
+
+.TravelHospitalityCards .mmt-custom-top {
+  margin-top: 0px;
+}
+
+.TravelHospitalityCards .mmt-papercard-container .mmt-test-curve {
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+}
+
+.TravelHospitalityCards .mmt-papercard-container .mmt-card-holder {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 3.3rem;
+  -ms-grid-columns: (minmax(17rem, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
+}
+
+.TravelHospitalityCards .owl-carousel .mmt-about-service-in {
+  border: 1px solid #c9c9d2;
+}
+
+.TravelHospitalityCards .mmt-knowledge-row .mmt-know-txt-wd {
+  width: 75%;
+}
+
+.TravelHospitalityCards .mmt-knowledge-row .mmt-project-name-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.TravelHospitalityCards .mmt-knowledge-row .mmt-project-name-div .mmt-project-name-img {
+  width: 40%;
+}
+
+.TravelHospitalityCards .mmt-knowledge-row .mmt-project-name-div .mmt-project-name-img .img-text {
+  font-weight: 900;
+  font-family: 'Poppins', sans-serif;
+  margin: 0px;
+  font: bold 450px sans;
+  text-align: left !important;
+  background-size: 100% 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+.TravelHospitalityCards .mmt-knowledge-row .mmt-project-name-div .mmt-project-name-img .mmt-project-img {
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.TravelHospitalityCards .mmt-know-menu {
+  width: 100%;
+  margin-top: 50px;
+  position: relative;
+}
+
+.TravelHospitalityCards .mmt-know-menu .mmt-subroute-dv {
+  width: 100%;
+  overflow: auto;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.TravelHospitalityCards .mmt-know-menu .mmt-subroute-dv .mmt-know-project {
+  padding-bottom: 20px;
+  min-width: 120px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  background: none !important;
+  color: #5b5b5b;
+}
+
+.TravelHospitalityCards .mmt-know-menu .mmt-subroute-dv .mmt-know-project h3 {
+  font-size: 20px;
+}
+
+.TravelHospitalityCards .mmt-know-menu .mmt-subroute-dv::-webkit-scrollbar {
+  display: none;
+}
+
+.TravelHospitalityCards .mmt-know-menu::-webkit-scrollbar {
+  display: none;
+}
+
+.TravelHospitalityCards .mmt-know-btn span {
+  display: inline-block;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.TravelHospitalityCards .mmt-know-btn span img {
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-timing-function: easy-in;
+          animation-timing-function: easy-in;
+  /*display: none;*/
+}
+
+.TravelHospitalityCards .mmt-know-btn:hover span img {
+  -webkit-animation: slide 0.8s alternate infinite;
+          animation: slide 0.8s alternate infinite;
+}
+
+.TravelHospitalityCards .btn-light:focus {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+.TravelHospitalityCards .nav-item {
+  min-width: 160px;
+  margin: 0px 25px;
+}
+
+.TravelHospitalityCards .nav-item .nav-link {
+  padding: 0px;
+}
+
+.TravelHospitalityCards .nav-link::after {
+  content: '';
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  border-radius: 50px;
+  background: #bababa;
+  bottom: 4px;
+}
+
+.TravelHospitalityCards .nav-pills .nav-link.active,
+.TravelHospitalityCards .nav-pills .show > .nav-link {
+  color: #000000;
+  position: relative;
+}
+
+.TravelHospitalityCards .nav-pills .nav-link.active::before,
+.TravelHospitalityCards .nav-pills .show > .nav-link::before {
+  content: '';
+  position: absolute;
+  height: 8px;
+  width: 100%;
+  border-radius: 100px;
+  background: aqua;
+  bottom: 0px;
+  z-index: 1;
+}
+
+.TravelHospitalityCards .item {
+  height: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.TravelHospitalityCards .item img {
+  height: 40px;
+  width: auto;
+}
+
+.TravelHospitalityCards .mmt-car-content {
+  height: 510px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.TravelHospitalityCards .extra-marg {
+  margin-top: 160px !important;
+}
+
+.TravelHospitalityCards .product-service-header {
+  min-height: 125px;
+}
+
+@media only screen and (max-width: 767px) {
+  .TravelHospitalityCards .mmt-about-service-in {
+    border-right: none;
+  }
+  .TravelHospitalityCards .mmt-know-menu .mmt-subroute-dv {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .TravelHospitalityCards .mmt-custom-top {
+    margin-top: 30px;
+  }
+  .TravelHospitalityCards .mmt-resp-font-xl {
+    font-size: 40px;
+  }
+}
+/*# sourceMappingURL=TravelHospitalityCards.css.map */

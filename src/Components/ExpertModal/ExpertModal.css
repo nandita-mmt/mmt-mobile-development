@@ -1,0 +1,87 @@
+.expert-modal .modal-body .input-img-2 {
+  top: 36px !important;
+}
+
+.expert-modal .modal-body .form-group {
+  height: 85px;
+}
+
+.expert-modal .modal-body .form-group label {
+  display: inline-block;
+  margin-bottom: 0px !important;
+  font-size: 16px;
+  font-weight: 300;
+  color: #000000;
+  letter-spacing: 0.5px;
+}
+
+.expert-modal .modal-body .form-group .form-control {
+  display: block;
+  width: 100%;
+  height: 45px;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #cacad3 !important;
+  border-radius: 5px !important;
+  padding-right: 55px;
+}
+
+.expert-modal .modal-body .form-group .form-control.is-invalid {
+  border-color: #dc3545 !important;
+  background-image: none !important;
+}
+
+.expert-modal .modal-body .form-group .form-control::-webkit-input-placeholder {
+  font-size: 12px;
+}
+
+.expert-modal .modal-body .form-group .form-control:-ms-input-placeholder {
+  font-size: 12px;
+}
+
+.expert-modal .modal-body .form-group .form-control::-ms-input-placeholder {
+  font-size: 12px;
+}
+
+.expert-modal .modal-body .form-group .form-control::placeholder {
+  font-size: 12px;
+}
+
+.expert-modal .modal-body .form-group .error-border {
+  border-color: #dc3545 !important;
+}
+
+.expert-modal .modal-body .form-group .form-control:focus {
+  /* color: #495057; */
+  background-color: #fff;
+  border-color: #966bd2 !important;
+  outline: 0;
+  -webkit-box-shadow: 0px 3px 6px #00000029 !important;
+          box-shadow: 0px 3px 6px #00000029 !important;
+}
+
+.expert-modal .modal-body .form-group input:-webkit-autofill,
+.expert-modal .modal-body .form-group input:-webkit-autofill:hover,
+.expert-modal .modal-body .form-group input:-webkit-autofill:focus,
+.expert-modal .modal-body .form-group input:-webkit-autofill:active {
+  -webkit-transition: background-color 5000s ease-in-out 0s !important;
+  transition: background-color 5000s ease-in-out 0s !important;
+  font-size: 14px;
+}
+
+.expert-modal .modal-body .password-visibility-btn {
+  right: 1px;
+}
+
+.expert-modal .modal-body .css-yk16xz-control {
+  height: 50px !important;
+}
+
+.expert-modal .modal-body .css-1pahdxg-control {
+  height: 50px !important;
+}
+/*# sourceMappingURL=ExpertModal.css.map */

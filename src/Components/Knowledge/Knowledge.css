@@ -1,0 +1,261 @@
+.Knowledge {
+  height: auto;
+  overflow: hidden;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+.Knowledge .mmt-knowledge-row .mmt-know-txt-wd {
+  width: auto;
+}
+
+.Knowledge .mmt-knowledge-row .mmt-project-name-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.Knowledge .mmt-knowledge-row .mmt-project-name-div .mmt-project-name-img {
+  width: 40%;
+}
+
+.Knowledge .mmt-knowledge-row .mmt-project-name-div .mmt-project-name-img .img-text {
+  font-weight: 900;
+  font-family: 'Poppins', sans-serif;
+  margin: 0px;
+  font: bold 380px sans;
+  text-align: left !important;
+  background-size: cover;
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+.Knowledge .mmt-know-menu {
+  height: 603px;
+  overflow: scroll;
+  border-left: 1px solid #dcdcdc;
+  border-right: 1px solid #dcdcdc;
+  overflow: auto;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+.Knowledge .mmt-know-menu .mmt-subroute-dv {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.Knowledge .mmt-know-menu .mmt-subroute-dv .mmt-know-project {
+  height: 120px;
+  width: 100%;
+  border-bottom: 1px solid #dcdcdc;
+  border-radius: 0px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  background: none !important;
+  color: #000000;
+}
+
+.Knowledge .mmt-know-menu::-webkit-scrollbar {
+  display: none;
+}
+
+.Knowledge .mmt-know-btn span {
+  display: inline-block;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.Knowledge .mmt-know-btn span img {
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-timing-function: easy-in;
+          animation-timing-function: easy-in;
+}
+
+.Knowledge .mmt-know-btn:hover span img {
+  -webkit-animation: slide 0.8s alternate infinite;
+          animation: slide 0.8s alternate infinite;
+}
+
+.Knowledge .btn-light:focus {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+.Knowledge .nav-item {
+  width: 100%;
+}
+
+.Knowledge .nav-item .nav-link {
+  padding: 0px;
+}
+
+.Knowledge .nav-pills .nav-link.active,
+.Knowledge .nav-pills .show > .nav-link {
+  color: #000000;
+  position: relative;
+}
+
+.Knowledge .nav-pills .nav-link.active::before,
+.Knowledge .nav-pills .show > .nav-link::before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 8px;
+  border-radius: 100px;
+  background: aqua;
+  left: 0px;
+  z-index: 1;
+}
+
+@-webkit-keyframes slide {
+  0% {
+    -webkit-transform: translate(0px, 0px) scale(1);
+            transform: translate(0px, 0px) scale(1);
+  }
+  100% {
+    -webkit-transform: translate(20px, 0px) scale(1.1);
+            transform: translate(20px, 0px) scale(1.1);
+  }
+}
+
+@keyframes slide {
+  0% {
+    -webkit-transform: translate(0px, 0px) scale(1);
+            transform: translate(0px, 0px) scale(1);
+  }
+  100% {
+    -webkit-transform: translate(20px, 0px) scale(1.1);
+            transform: translate(20px, 0px) scale(1.1);
+  }
+}
+
+.btn-light {
+  background-color: #ffffff !important;
+  border-color: #ffffff !important;
+  padding: 0px !important;
+}
+
+@media only screen and (max-width: 1200px) {
+  .Knowledge .mmt-project-name-img {
+    width: 50% !important;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .Knowledge {
+    height: 100% !important;
+  }
+  .Knowledge .mmt-project-name-img {
+    width: 40% !important;
+  }
+  .Knowledge .mmt-know-txt-wd {
+    width: 100% !important;
+    margin: 0 auto;
+  }
+  .Knowledge .mmt-know-menu {
+    height: 120px;
+    width: 100%;
+    padding: 0px;
+    border-left: 0px solid #dcdcdc;
+    border-right: 0px solid #dcdcdc;
+    border-top: 1px solid #dcdcdc;
+    border-bottom: 1px solid #dcdcdc;
+    overflow: auto;
+  }
+  .Knowledge .mmt-know-menu .mmt-subroute-dv {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 100% !important;
+    overflow-x: auto;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .Knowledge .mmt-know-menu .mmt-subroute-dv .mmt-know-project {
+    height: 120px;
+    width: 120px;
+    padding: 10px;
+    border-left: 1px solid #dcdcdc;
+    border-right: 1px solid #dcdcdc;
+    border-bottom: 0px solid #dcdcdc;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: relative;
+  }
+  .Knowledge .mmt-know-menu .mmt-subroute-dv .mmt-know-project .active {
+    position: absolute;
+    height: 7px;
+    border-radius: 20%;
+    width: 70%;
+    background: #19b8a8;
+    bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+  }
+  .Knowledge .nav-pills .nav-link.active,
+  .Knowledge .nav-pills .show > .nav-link {
+    color: #000000;
+    position: relative;
+  }
+  .Knowledge .nav-pills .nav-link.active::before,
+  .Knowledge .nav-pills .show > .nav-link::before {
+    content: '';
+    position: absolute;
+    height: 8px;
+    width: 100%;
+    border-radius: 100px;
+    background: aqua;
+    bottom: 0px;
+    z-index: 1;
+  }
+  .nav-item {
+    width: auto !important;
+  }
+  .nav-item .nav-link {
+    padding: 0px;
+    background: none !important;
+  }
+  .nav-link:active {
+    background: none !important;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .Knowledge .mmt-project-name-img {
+    width: 100% !important;
+  }
+}
+/*# sourceMappingURL=Knowledge.css.map */

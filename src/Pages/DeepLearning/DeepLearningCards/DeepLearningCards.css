@@ -1,0 +1,95 @@
+.DeepLearningCards {
+  width: 100%;
+  height: auto;
+}
+
+.DeepLearningCards .mmt-papercard-container .mmt-form-div {
+  -webkit-box-shadow: 0px 5px 20px #0000001c;
+          box-shadow: 0px 5px 20px #0000001c;
+}
+
+.DeepLearningCards .mmt-papercard-container .mmt-test-curve {
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+}
+
+.DeepLearningCards .mmt-company-div {
+  height: 40px;
+}
+
+.DeepLearningCards .mmt-block-canvas {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.DeepLearningCards .mmt-right-txt {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.DeepLearningCards .mmt-company {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 40%;
+}
+
+.DeepLearningCards .mmt-blockchain-crd {
+  height: 400px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 25px 50px #00000029;
+          box-shadow: 0px 25px 50px #00000029;
+}
+
+.DeepLearningCards .mmt-body-background {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../../../Assets/Images/Common/body-background.svg);
+}
+
+.DeepLearningCards .mmt-block-solution {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media only screen and (max-width: 992px) {
+  .DeepLearningCards {
+    width: 100%;
+    height: auto;
+  }
+  .DeepLearningCards .mmt-papercard-container .mmt-test-curve {
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+  }
+  .DeepLearningCards .mmt-blockchain-crd {
+    height: auto;
+  }
+  .DeepLearningCards .mmt-company-div {
+    height: 49px;
+  }
+  .DeepLearningCards .mmt-company {
+    width: 150px !important;
+    height: 100% !important;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .DeepLearningCards .popover {
+    min-width: 350px !important;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .DeepLearningCards .popover {
+    min-width: 300px !important;
+  }
+}
+/*# sourceMappingURL=DeepLearningCards.css.map */
