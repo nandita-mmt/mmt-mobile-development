@@ -50,7 +50,7 @@ p {
   margin: 0px; color: #323232;
   font-size: 16px;
   margin-bottom: 10px;
-  font-weight: 400;
+  font-weight: 600 !important;
 }
 
 a, button, input[type="submit"] {
@@ -80,13 +80,21 @@ $secondary_color:#404041;
       background: #ffffff !important;
       color: $bgColor !important;
       // box-shadow: 7px 5px 11px #fb525235;
-  }
+  }  
 }
 .btns_custom{
   @include btn_style($padding:10px 30px, $bgColor:$primary_color, $fontSize: 17px);
+  @media only screen and (max-width:480px){
+   font-size: 14px;
+   padding: 5px 10px; 
+  }
 }
 .talk-to-expart{
   @include btn_style($padding:10px 30px, $bgColor:$primary_color , $fontSize: 14px);
+  @media only screen and (max-width:480px){
+    font-size: 14px;
+    padding: 5px 10px; 
+   }
 }
 .header-wrapper {
   padding-left: 15px;
@@ -105,6 +113,9 @@ $secondary_color:#404041;
   z-index: 10000;
   background-color: #fff;
   transition: 0.5s ease;
+  .btns_custom{
+    white-space: nowrap;
+  }
 }
 .fixed-sidebtn-container{
   position: fixed;
@@ -134,7 +145,7 @@ section{
   padding:60px 0px;
 }
 .heading{
-  margin-bottom: 35px;
+  margin-bottom: 25px;
   h2{
     font-size: 40px;
     color: $secondary_color;
@@ -155,7 +166,7 @@ section{
   }
 }
 .banner{
-  background: url("../../Assets/Images/Banner/dotted-bg.png") no-repeat  45% 20%, url("../../Assets/Images/Banner/dotted-bg-2.png") no-repeat 2% 90% ;
+  background: url("../../Assets/Images/Banner/dotted-bg.png") no-repeat  45% 20% ;
   // background-position: 45% 20%;
   padding-bottom: 0px;
   h1{
@@ -204,6 +215,7 @@ section{
         height: 100px !important;
         resize:none;
       }
+      .text-danger{display: none;}
       input[type="submit"]{
         margin-top: 15px;
         @include btn_style($padding:10px 30px, $bgColor:$primary_color, $fontSize: 17px);
@@ -224,18 +236,20 @@ section{
   color: #ffffff;
 }
 .engagement{
+  background:url("../../Assets/Images/Banner/dotted-bg-2.png") no-repeat 0% 2% ;
+  
   .section{
     background: url(../../Assets/Images/MobileLanding/round.png) no-repeat center;
     background-size: contain;
-    padding:120px 0px;
+    padding:100px 10px;
     .icon{
       display: flex;
       align-items:center;
       justify-content:center;
-      margin-bottom: 20px;
+      margin-bottom: 0px;
       h3{
-        font-size: 40px;
-        font-weight: 900;
+        font-size: 70px;
+        font-weight: 700;
         color: $primary_color;
       }
     }
@@ -320,7 +334,7 @@ section{
     }
   }
   h3{
-    font-size: 24px;
+    font-size: 22px;
     color: #ffffff;
     @media only screen and(max-width: 1366px){
         font-size: 16px;
@@ -365,19 +379,21 @@ section{
     }
   }
   .btns_custom{
-    margin-top: 30px;
+    margin-top: 70px;
   }
 }
 .global-presentation, .technology{
   background-color: $secondary_color;
 }
 .technology{
-  background: $secondary_color url(../../Assets/Images/MobileLanding/graphic02.png) no-repeat 100% 40%;
+  background: $secondary_color url(../../Assets/Images/MobileLanding/graphic02.png) no-repeat 95% 25%;
     background-size: 10% auto;
-  padding-bottom: 10px;
-  min-height: 620px;
+  padding-bottom: 60px;  
  height: max-content;
   transition: 0.3s;
+  .tech-slider{
+    min-height: 405px;
+  }
   ul.nav{
     margin-bottom: 40px;
       a{
@@ -392,12 +408,10 @@ section{
           color: #ffffff;
         }
       }
-      
-        a.active{
+              a.active{
           color: #ffffff;
           background-color: $primary_color;
-        }
-      
+        }     
     
   }
   .logos{
@@ -435,8 +449,8 @@ section{
   }
 }
 .global-presentation{
-  padding-bottom: 0px;
-  background: #404041 url(../../Assets/Images/MobileLanding/graphic02.png) no-repeat 100% 75%;
+  padding-bottom: 60px;
+  background: #404041 url(../../Assets/Images/MobileLanding/graphic02.png) no-repeat 95% 55%;
   background-size: 8% auto;
   .col-lg-3{
     min-height: 400px;
@@ -599,6 +613,7 @@ section{
             background-color: #effbff;
             margin-bottom: 25px;
             border-radius: 20px;
+            transition: 0.5s;
         }
         .card-header{
             background-color: transparent;
@@ -625,6 +640,7 @@ section{
                 font{
                     transform: scale(1.2);
                     font-size: 20px;
+                    font-weight: bold;
                 }
                 span{
                     font-size: 30px;
@@ -645,28 +661,16 @@ section{
                         left:63px;
                     }
                 }
-                &:after{
-                    content: '';
-                    position: absolute;
-                    width: 20px;
-                    height: 1px;
-                    background-color: #161623;
-                    right: 20px;
-                    top:30px;
-                }
                 &:before{
                     content: '';
+                    background:url("../../Assets/Images/MobileLanding/acordion-icon.png") no-repeat center ;
                     position: absolute;
-                    width: 20px;
-                    height: 1px;
-                    background-color: #161623;
-                    right: 20px;
-                    top:30px;
-                    transform-origin: 50% 50%;
-                    transform: rotate(90deg);
-                    transition:0.5s;
-                }
-
+                    width: 30px;
+                    height: 30px;
+                    right: 18px;
+                    top: 18px;
+                    transition: 0.5s;
+                } 
             }
             button:contains{
                 font-size:50px;
@@ -695,13 +699,12 @@ section{
                 &:before{
                     content: '';
                     position: absolute;
-                    width: 20px;
-                    height: 1px;
-                    background-color: #161623;
-                    right: 20px;
-                    top:30px;
+                    width: 30px;
+                    height: 30px;
+                    right: 18px;
+                    top: 18px;
+                    transform: rotate(180deg);
                     transform-origin: 50% 50%;
-                    transform: rotate(0deg);
                 }
             }
             
@@ -709,7 +712,8 @@ section{
         .card-body{
             padding: 15px;
             font-size: 15px;
-            font-weight: 500;
+            font-weight: 600;
+            transition: 0.5s;
             ul{
               padding-left: 0px;
               margin-top: 20px;
@@ -717,74 +721,33 @@ section{
         }
         
     }
+    .btns_custom{
+      margin-top: 60px;
+    }
 }
 .information-form{
   position: relative;
   padding-bottom: 20px;
-  background: url(../../Assets/Images/MobileLanding/dotted.png) no-repeat 98% 100%;
+  background: url(../../Assets/Images/MobileLanding/dotted.png) no-repeat 98% 20%;
     background-size: 10% auto;
-  &:after{
-    content:'';
-    background-color: $secondary_color;
-    width: 50%;
-    height: 100%;
-    position: absolute;
-    top:0px;
-    left:0px;z-index: -1;
-  }
-  input, textarea, input[type="tel"]{
-    height: 50px;
-    border-radius: 35px;
-    border:1px solid $primary_color;
-    background-color: transparent;
-    color: #ffffff;
-    &::placeholder{
-      color:#fff;
-    }
-    &:focus{
-      background-color: $primary_color;
-      color: #ffffff;
-    }
-    &:active{
-      background-color: $primary_color;
-      color: #ffffff;
-    }
-  }
-  textarea{
-    height: 100px;
-    resize:none;
-  }
-  .form-check{
-    padding-left: 0px;
-    label{
-      color: #ffffff;
-      font-size: 14px;
-      margin-left: 20px;
-      font-weight: 600;
-    }
-    input[type="checkbox"]{
-      height: auto;
-    }
-  }
-  input[type="submit"]{
-    margin-top: 15px;
-    @include btn_style($padding:10px 30px, $bgColor:$primary_color, $fontSize: 17px);
-    &:hover{
-      background-color: $secondary_color;
-    }
-  }
+    padding-top: 0 !important;
 }
 .form-right{
-  ul{
-    padding-left: 30px;
-    li{
-      margin-bottom: 30px;
-      &:last-child{
-        margin-bottom: 0px;
-      }
+  // padding-left: 30px;
+  .col-lg-6{
+    margin-bottom: 30px;
+    .explore-solutions{
+      background-color: #f4f7f7;   
       span{
-        display: inline-block;
+        display: inline-flex;
         margin-right: 15px;
+        background-color: #662d91;
+        flex: 0 0 30%;
+        height: 200px;        
+        img{
+          width: 70%;
+          margin: auto;
+        }
       }
       h3{
         font-size: 24px;
@@ -796,7 +759,7 @@ section{
         }
       }
     }
-  }
+  } 
 }
 .social{
     li{
@@ -895,7 +858,7 @@ section{
 form .form-group{margin-bottom: 20px;}
 .react-tel-input .selected-flag, .react-tel-input .flag-dropdown{background: transparent !important; border-radius: 30px 0px 0px 30px !important;}
 .copy p{color: #fff;}
-
+.accordion__panel{padding: 0;}
 @media only screen and (max-width:1920px){
   .global-presentation .section h3{
     margin-top: -30px;
@@ -903,7 +866,25 @@ form .form-group{margin-bottom: 20px;}
   .global-presentation .col-lg-3 {
     min-height: 420px;
   }
+  .benefits .owl-nav{display: none;}
 
+}
+
+@media only screen and (max-width:1600px){
+  .global-presentation {    
+    background-position: 100% 30%;
+}   
+}
+@media only screen and (max-width:1440px){
+  .global-presentation {
+    background-position: 95% 10%;
+  }
+  .banner h1{
+    font-size: 75px;
+  }
+  .benefits h3{
+    font-size: 18px;
+  } 
 }
 @media only screen and (max-width:1399px){
   .engagement .section{
@@ -912,17 +893,51 @@ form .form-group{margin-bottom: 20px;}
   .engagement .section h5{
     font-size: 15px;
     max-width: 210px;
-  }
+  }  
 }
 @media only screen and (max-width:1366px){
   .global-presentation .section h3{
     margin-top: 0px;
   }
+  .form-right .col-lg-6 .explore-solutions span img{
+    width: 63%;
+  }
+  .technology .logos li{
+    margin: 0px 18px 18px;
+  }
+  .global-presentation .section{
+    height: 160px;
+  }
+  .global-presentation .section .text p{
+    font-size: 12px;
+    padding: 0 10px;
+  }
 }
 @media only screen and (max-width:1156px){
+  p{
+    font-size: 14px;
+  }
+  .banner h2, .heading h2{
+    font-size: 27px;
+  }
   .engagement .section {
     padding: 60px 0;
-}
+    background-size: cover;
+  }
+  .engagement .section p {
+    font-size: 12px;
+    padding: 0px 50px;
+  } 
+  .banner h1{
+    font-size: 60px;
+  }
+  .benefits h3{
+    font-size: 15px;
+  }
+  .faqs .accordion .card-header button font,
+  .faqs .accordion .card-header .collapsed font{
+    font-size: 18px;
+  }
 }
 
 @media only screen and (max-width:1080px){
@@ -936,8 +951,28 @@ form .form-group{margin-bottom: 20px;}
   .form-right ul{padding-left: 0px;}
   .benefits{padding-bottom: 90px;}
   .benefits .heading{margin-bottom: 0;}
+  .benefits .owl-nav{display: block;}
+  .engagement .section{padding: 80px 0;}
+  .banner .banner-text h1{text-align: left !important;font-size: 45px !important;}
+  .banner h2, .banner .h2, .heading h2, .heading .h2 {font-size: 24px;}
+  .banner .ddd{padding: 1.2rem;}
+  .global-presentation .section{height: 100%;min-height: 316px;}
+  .global-presentation .section .text,
+  .global-presentation .section .text p,
+  .global-presentation .section .text .anchore{opacity: 1;}
 }
 @media only screen and (max-width:767px){
+  .banner,.engagement{background-size: 30%;}  
+  .header-container a img{
+    width: 80% !important;
+    }
+    .header-container .btns_custom{
+      padding: 5px 10px !important;
+      font-size: 14px !important;
+    }
+  .banner{background-position: 100% 1%;}
+  .banner .ddd{margin-top: 60px;}
+  .banner .banner-text h1{font-size: 60px !important; text-align: center !important;}
   .technology ul.nav a{margin-bottom: 10px; margin-right: 10px;}
   .global-presentation .col-lg-3{min-height: 100%;}
   .global-presentation .section .text, .global-presentation .section .text .anchore{opacity: 1;}
@@ -948,7 +983,6 @@ form .form-group{margin-bottom: 20px;}
   .engagement .col-lg-4:nth-child(2)::after, .engagement .col-lg-4:nth-child(3)::after, .engagement .col-lg-4:nth-child(4)::after{
     display: none;
   }
-
   .banner h1{font-size: 60px;}
   .banner h2 {
     font-size: 20px;
@@ -956,13 +990,21 @@ form .form-group{margin-bottom: 20px;}
   .heading h2 {
     font-size: 24px;
   }
-  .engagement .section{padding: 106px 0px;}
+  .engagement .section{padding: 120px 0px;}
+  .engagement .section p{padding: 0 80px;}
   .store p{display: none;}
   .frameworks-database{flex-wrap:wrap;}
   .destination .per-Projects{overflow: inherit; max-height: 100%;}
   .destination .per-Projects{border-radius: 30px; overflow: hidden;}
+  .technology .tech-slider{min-height: 480px;}
+  .technology .logos li{padding-bottom: 8px;}
 }
 @media only screen and (max-width:575px){
+  .banner,.engagement{background-size: 20%;}  
+  .fixed-sidebtn-container{display: none;}
+  .default-page-template .content-wrapper{
+    padding-top: 20px;
+  }
   .banner{
     padding-top: 30px;
   }
@@ -980,8 +1022,7 @@ form .form-group{margin-bottom: 20px;}
     left: -20px;
     transform: rotate(100deg);
   }
-  .engagement .section{background-size: auto 100%}
-  
+  .engagement .section{background-size: auto 100%;padding: 120px 50px;} 
   .engagement .section p{padding: 0px 120px;}
   .affordable-price .section{min-height: 290px;}
   .destination .per-Projects{overflow: inherit; max-height: 100%;}
@@ -1003,6 +1044,10 @@ form .form-group{margin-bottom: 20px;}
 .technology .logos li{margin: 0px 25px 10px;}
 }
 @media only screen and (max-width:480px){
+  .banner,.engagement{background-size: 10%;}  
+  .header-container .btns_custom{    
+    font-size: 12px !important;
+  }
  .talk-to-expart{
     padding: 8px 20px;
     font-size: 12px;
@@ -1021,6 +1066,12 @@ margin-bottom: 30px;}
 .engagement .section p{padding: 0px 52px;}
 .technology ul.nav li{flex:0 0 calc(100% / 2); text-align: center;}
 .technology ul.nav li a{width: 92%; text-align: center; padding: 10px 0px; margin:0 auto 5px; font-size: 12px; }
+}
+
+@media only screen and (max-width:375px){
+  .engagement .section {
+    padding: 120px 0;
+}
 }
 @media only screen and (max-width:360px){
     .banner h1 {

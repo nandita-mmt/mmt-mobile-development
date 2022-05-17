@@ -19,6 +19,7 @@ import ICON01 from "../../Assets/Images/MobileLanding/icon-01.png";
 import ICON02 from "../../Assets/Images/MobileLanding/icon-02.png";
 import ICON03 from "../../Assets/Images/MobileLanding/icon-03.png";
 import ICON04 from "../../Assets/Images/MobileLanding/icon-04.png";
+import ICON05 from "../../Assets/Images/MobileLanding/icon-05.png";
 import BASICICON from "../../Assets/Images/MobileLanding/basic-icon.png";
 import STANDARDICON from "../../Assets/Images/MobileLanding/standard-icon.png";
 import PREMIUMICON from "../../Assets/Images/MobileLanding/premium-icon.png";
@@ -153,7 +154,7 @@ const MobileLanding = () => {
 		e.preventDefault();
 	}
 	/* Carousel */
-	const responsiveTxt = { 0: { items: 1 }, 992: { items: 4 } };
+	const responsiveTxt = { 1920:{items:5}, 1440:{items:5},1024:{items:5},0: { items: 1 }, 992: { items: 4 } ,767: { items: 3 },575: { items: 2 },480: { items: 2 }};
 	const toggleColor = () => {
 		const className = 'hover-green';
 		const isActiveSlideGreen = $('#carousel-parent').find('.owl-item.active').children('.mmt-car-content').hasClass('green');
@@ -177,10 +178,10 @@ const MobileLanding = () => {
 		<div class="header-container">
 			<div className='container'>
 				<div className="row justify-content-between align-items-center">
-					<div className="col-lg-4 col-md-3 col-sm-4 col-5">
+					<div className="col-lg-4 col-md-6 col-sm-6 col-6">
 						<a href="#header-logo-redirect" onClick={stopHrefRedirect}><img src={LOGO2} alt="" className="img-fluid" /></a>
 					</div>
-					<div className="col-lg-3 col-md-3 col-sm-3 col-5">
+					<div className="col-lg-3 col-md-6 col-sm-6 col-6">
 						<a href="#enquiry" className="btn btns_custom float-end">Hire Consultants</a>
 					</div>
 				</div>
@@ -196,7 +197,7 @@ const MobileLanding = () => {
 				<div className="container">
 					<div className="row justify-content-lg-end align-items-center">
 						<div className="col-lg-6 col-md-6 col-sm-12 col-12 pt-5">
-							<div className="banner-text text-lg-start text-md-center text-center">
+							<div className="banner-text text-lg-start text-md-start text-center">
 								<h2>We are Experts in</h2>
 								<h1>iOS & Android</h1>
 								<h2>Mobile App Development</h2>
@@ -248,7 +249,6 @@ const MobileLanding = () => {
 													</div>
 												</div>
 												<div className="col-lg-6">
-
 													<div className="form-group">
 														<FormikControl
 															control='email'
@@ -280,9 +280,12 @@ const MobileLanding = () => {
 															value={''}
 														/>
 													</div>
-												</div>												
-												<div className="col-lg-12 text-right float-end">
-													<input type="submit" value="Send Message" disabled={!dirty || isSubmitting} />
+												</div>		
+												<div className="col-lg-6 captcha">
+												
+												</div>										
+												<div className="col-lg-6 text-right ">
+													<input type="submit" className="float-end" value="Send Message" disabled={!dirty || isSubmitting} />
 												</div>
 											</div>
 										</Form>
@@ -356,11 +359,11 @@ of the requirement</p>
 				<div className="container">
 					<div className="row justify-content-between align-items-center">
 						<div className="heading col-lg-12 text-center white">
-							<h2>Benefits of Magicmind</h2>
-							<p>We are flexible and can help you at different stages with customized services</p>
+							<h2>Key Benefits</h2>
+							<p>The experience of working with a team where there are no strings of risk-factor attached</p>
 						</div>
 						<div className="col-lg-12">
-							<OwlCarousel items={4} dots={false} autoplay={false} loop={true} margin={0} nav={true} responsive={responsiveTxt} onTranslated={toggleColor}
+							<OwlCarousel items={5} dots={false} autoplay={false} loop={true} margin={0} nav={true} responsive={responsiveTxt} onTranslated={toggleColor}
 								className='owl-carousel owl-theme benefitss'>
 								{/* <div className="owl-theam owl-carousel benefitss"> */}
 								<div className="item">
@@ -385,6 +388,12 @@ of the requirement</p>
 									<div className="secion text-center">
 										<img src={ICON04} alt="" />
 										<h3>Agile Methodology</h3>
+									</div>
+								</div>
+								<div className="item">
+									<div className="secion text-center">
+										<img src={ICON05} alt="" />
+										<h3>Anytime Availability</h3>
 									</div>
 								</div>
 								{/* </div> */}
@@ -435,7 +444,7 @@ of the requirement</p>
 							</div>
 						</div>
 						<div className="col-lg-12 text-center">
-							<a href="#enquiry" className="btn btns_custom">Book your free trial</a>
+							<a href="#enquiry" className="btn btns_custom">Hire Consultants</a>
 						</div>
 					</div>
 				</div>
@@ -638,9 +647,7 @@ of the requirement</p>
 							<h2>Technologies we Play with</h2>
 							<p>The experience of working with a team where there are no strings of risk-factor attached</p>
 						</div>
-						<div className="col-lg-12">
-
-
+						<div className="col-lg-12 tech-slider">
 							<ul className="d-flex align-items-center justify-content-between nav">
 								<li ><a href="#eight" onClick={(e) => { e.preventDefault(); setShowLogo('eight') }} className={showLogo === 'eight' ? "active" : ""}>Mobile development</a></li>
 								<li><a href="#two" onClick={(e) => { e.preventDefault(); setShowLogo('one') }} className={showLogo === 'one' ? "active" : ""}>Web development</a></li>
@@ -874,8 +881,12 @@ of the requirement</p>
 								</ul>
 							</div>}
 						</div>
+						<div className="col-lg-12 text-center">
+								<a href="#enquiry" className="btn btns_custom">Hire Consultants</a>
+						</div>
 					</div>
 				</div>
+							
 			</section>
 			<section className="achievements">
 				<div className="container">
@@ -1107,140 +1118,58 @@ of the requirement</p>
 
 							</Accordion>
 						</div>
+						<div className="col-lg-12 text-center">
+							<a href="#enquiry" className="btn btns_custom">Hire Consultants</a>
+						</div>
 					</div>
 				</div>
 			</section>
 			<section className="information-form" id="enquiry">
 				<div className="container">
-					<div className="row justify-content-between align-items-start">
-						<div className="col-lg-6 ddd">
-							<div className="heading white">
-								<h2>Let’s Talk About Your Project</h2>
-								<p>How Can We Help?</p>
-							</div>
-							<Formik
-								initialValues={initialValues}
-								validationSchema={validationSchema}
-								onSubmit={handleSubmit}
-							>
-								{({ dirty, isSubmitting }) => {
-									return (
-										<Form noValidate className='w-100 mb-3'>
-											<div className="row">
-												<div className="col-lg-6">
-													<div className="form-group">
-														<FormikControl
-															control='text'
-															name='Name'
-															placeholder='Name*'
-															required={true}
-															value={''}
-														/>
-														{/* <input type="text" required placeholder="Name*" className="form-control"/> */}
-													</div>
-												</div>
-												<div className="col-lg-6">
-													<div className="form-group">
-														<FormikControl
-															control='phone'
-															name='phone'
-															className="form-control"
-															prefixInputName='countryPrefix'
-															// placeholder='Enter phone number'
-															placeholder='Phone Number*'
-															required={true}
-															value={''}
-														/>
-														{/* <input type="number" required placeholder="Phone number*" className="form-control"/> */}
-													</div>
-												</div>
-												<div className="col-lg-6">
-
-													<div className="form-group">
-														<FormikControl
-															control='email'
-															name='email'
-															placeholder='Email address*'
-															required={true}
-															value={''}
-														/>
-													</div>
-												</div>
-												<div className="col-lg-6">
-													<div className="form-group">
-														<FormikControl
-															control='text'
-															name='company'
-															placeholder='Company name*'
-															required={true}
-															value={''}
-														/>
-													</div>
-												</div>
-												<div className="col-lg-12">
-													<div className="form-group">
-														<FormikControl
-															control='textarea'
-															name='message'
-															placeholder='Message*'
-															required={true}
-															value={''}
-														/>
-													</div>
-												</div>
-												<div className="col-lg-12">
-													<div className="form-check">
-														<input type="checkbox" className="" name="newsletter_subscription" id="newsletter_subscription" />
-														<label className="form-check-label" htmlFor='newsletter_subscription'>Get monthly Updates and Newsletters for latest technologies insights.</label>
-													</div>
-												</div>
-												<div className="col-lg-12 text-right">
-													<input type="submit" value="Send message" disabled={!dirty || isSubmitting} />
-												</div>
-											</div>
-										</Form>
-									);
-								}}
-							</Formik>
-
-						</div>
-						<div className="col-lg-6 form-right">
-							<div className="heading">
+							<div className="heading col-lg-12 text-center">
 								<h2>Explore Solutions</h2>
 								<p>Other related services</p>
 							</div>
-							<ul>
-								<li className="d-flex align-items-start">
+									
+						<div className="row form-right">
+								<div className="col-lg-6">
+									<div className="explore-solutions d-flex align-items-center">
 									<span><img src={FICON01} alt="" /></span>
 									<div>
 										<h3>Restaurant Management Software-Appetyzer</h3>
 										<p>An app that simplifies food ordering-delivering and real-time tracking at the fingertips.</p>
 									</div>
-								</li>
-								<li className="d-flex align-items-start">
-									<span><img src={FICON02} alt="" /></span>
-									<div>
-										<h3>Ecommerce Modules</h3>
-										<p>A proprietary multi-vendor platform for the ease of buying and selling a wide range of products from the catalogue.</p>
 									</div>
-								</li>
-								<li className="d-flex align-items-start">
+								</div>
+								<div className="col-lg-6">
+									<div className="explore-solutions d-flex align-items-center">
+										<span><img src={FICON02} alt="" /></span>
+										<div>
+											<h3>Ecommerce Modules</h3>
+											<p>A proprietary multi-vendor platform for the ease of buying and selling a wide range of products from the catalogue.</p>
+										</div>
+									</div>
+								</div>
+								<div className="col-lg-6">
+								<div className="explore-solutions d-flex align-items-center">
 									<span><img src={FICON03} alt="" /></span>
 									<div>
 										<h3>Website Builder - Woxi</h3>
 										<p>A comprehensive cloud platform for new-age entrepreneurs to create apps with seamless, accessible and intelligent drag and drop tools.</p>
 									</div>
-								</li>
-								<li className="d-flex align-items-start">
+								</div>
+								</div>
+								<div className="col-lg-6">
+								<div className="explore-solutions d-flex align-items-center">
 									<span><img src={FICON04} alt="" /></span>
 									<div>
 										<h3>Custom Software Development</h3>
 										<p>Design, create, deploy and maintain customized software to fit your requirements.</p>
 									</div>
-								</li>
-							</ul>
+								</div>
+								</div>							
 						</div>
-					</div>
+					
 				</div>
 			</section>
 		</div>
